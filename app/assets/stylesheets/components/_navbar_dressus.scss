@@ -1,0 +1,76 @@
+.navbar-title {
+  text-decoration: none;
+  color: $black;
+  text-indent: 20px;
+  font-size: 42px;
+  margin: 30px;
+  h1 {
+    font-family: 'Prata', serif
+  }
+}
+
+
+.navbar-dressus .navbar-collapse {
+  flex-grow: 0;
+}
+
+//searchbar
+.search-form-control {
+  position: relative;
+}
+
+.search-form-control .btn {
+  position: absolute;
+  text-align: center;
+}
+
+.search-form-control .form-control {
+  height: 2rem;
+  // box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+}
+
+.search-form-control .form-control:focus {
+  border: 1px solid #E0E0E0;
+  outline: none !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+//globe_icon
+.fa-solid fa-globe {
+  color: $darkgrey;
+}
+
+.fa-solid fa-globe a:hover {
+    opacity: 0.50;
+    color: #B1BEB9;
+}
+
+//heart_icon
+.fa-solid fa-heart {
+  color: $darkgrey;
+}
+
+//bag_icon
+.fa-solid fa-bag-shopping {
+  color: $darkgrey;
+}
+
+
+//dropdown_icon
+.fa-solid fa-bars {
+  color: $darkgrey;
+}
+
+//and_dropdown_feature
+.navbar-icons {
+  a {
+    color: $darkgrey;
+
+    &:hover {
+      opacity: 1;
+      color: #B1BEB9;
+    }
+  }
+}
