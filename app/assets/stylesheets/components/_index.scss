@@ -3,3 +3,11 @@
 @import "avatar";
 @import "form_legend_clear";
 @import "navbar";
+@import "footer";
+@import "banner";
+
+.page-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  }
