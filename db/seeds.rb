@@ -5,6 +5,10 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+require "open-uri"
+
+
+
 puts "Cleaning database..."
 User.destroy_all
 
@@ -17,9 +21,24 @@ jules = User.create(first_name: "Jules", last_name: "D.", address: "Perangan, Ca
 grant = User.create(first_name: "Grant", last_name: "N.", address: "Berawa Beach, Canggu", phone_number: "+ 33 612294394", email: "grantn@test.com", password: "paradise")
 
 puts "Creating listings..."
-Listing.create(category: "Men" ,title: "Suit, Hugo Boss" ,description: "New Suit, never wear", size: "52",price: "350" ,location: "London",brand: "Hugo Boss", user: jules )
-Listing.create(category: "Men" ,title: "Beige Suit" ,description: "Beige Suit, perfect for the summer" , size: "48",price: "120" ,location: "Amsterdam",brand: "Calvin", user: grant )
-Listing.create(category: "Women" ,title: "Beautiful Wrap Dress" ,description: "Wrap Dress from Revolve, worn once", size: "38",price: "80",location: "Paris" ,brand: "Asos", user: gwen )
-Listing.create(category: "Women" ,title: "Beautiful Wrap Dress" ,description: "Wrap Dress from Revolve, worn once", size: "38",price: "80",location: "Paris" ,brand: "Asos", user: juliette)
+hugoboss = Listing.create(category: "Men" ,title: "Suit, Hugo Boss" ,description: "New Suit, never wear", size: "52",price: "250" ,location: "London",brand: "Hugo Boss", user: jules )
+file = URI.open("https://images.hugoboss.com/is/image/hugobossdm/20210614_HB_SR22_BM_Additional_Content_Shooting_L14_1013_sRGB?%24large%24&cropN=0.0286738,0.0507812,0.958184,0.9265625&align=0,-1&fit=crop,1&ts=1652259588625&wid=376&hei=556")
+hugoboss.photo.attach(io: file, filename: "suits.png", content_type: "image/png")
+hugoboss.save
+
+defrusac =Listing.create(category: "Men" ,title: "Beige Suit" ,description: "Beige Suit, perfect for the summer" , size: "48",price: "320" ,location: "Amsterdam",brand: "De Frusac", user: grant )
+file = URI.open("https://static.fursac.com/data/suit-men-separate-suits-yellow-22ec3vato-vx1353-pl0121104.1642615079.jpg")
+defrusac.photo.attach(io: file, filename: "suits.jpg", content_type: "image/jpg")
+defrusac.save
+
+revolve = Listing.create(category: "Women" ,title: "Beautiful Wrap Dress" ,description: "Wrap Dress from Revolve, worn once", size: "38",price: "80",location: "Paris" ,brand: "Asos", user: gwen )
+file = URI.open("https://is4.revolveassets.com/images/p4/n/z/MASO-WD366_V1.jpg")
+revolve.photo.attach(io: file, filename: "suits.jpg", content_type: "image/jpg")
+revolve.save
+
+asos = Listing.create(category: "Women" ,title: "Cocktail Midi Dress" ,description: "Perfect for a cocktail party, wedding.", size: "42",price: "80",location: "Paris" ,brand: "Asos", user: juliette)
+file = URI.open("https://cdna.lystit.com/photos/asos/38b570a0/asos-Green-Embellished-Cami-Midi-Dress.jpeg")
+asos.photo.attach(io: file, filename: "suits.jpg", content_type: "image/jpg")
+asos.save
 
 puts "All goood, congrats"
