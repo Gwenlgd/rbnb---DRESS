@@ -1,11 +1,14 @@
 h1 {
   color: black;
+  text-align: center;
 }
 
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
+  margin: 20px;
+  justify-content: space-around;
 }
 
 .card-item {
