@@ -1,0 +1,62 @@
+h1 {
+  color: black;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  margin: 20px;
+  justify-content: space-around;
+}
+
+.card-item {
+  padding: 10px;
+  height: 440px;
+  width: 247px;
+  background: #fffbfb;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-item img {
+  height: 336px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-item .card-item-infos {
+  padding: 16px;
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-item-brand {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-item-size {
+  font-size: 12px;
+  opacity: 0.8;
+  margin: 0;
+
+}
+
+.card-item-likes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-nb-likes {
+  font-size: 14px;
+  margin: 5px;
+}
+
+.fa-regular {
+margin-right: 1px;
+}
