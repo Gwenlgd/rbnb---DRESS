@@ -2,6 +2,14 @@
 @import "alert";
 @import "avatar";
 @import "form_legend_clear";
+@import "footer";
+@import "banner";
 @import "navbar_dressus";
 @import "searchbar";
 @import "card_items";
+
+.page-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+ }

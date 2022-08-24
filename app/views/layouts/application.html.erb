@@ -11,9 +11,13 @@
   </head>
 
   <body>
-    <%= render "shared/navbar" %>
-    <%= render "shared/flashes" %>
-    <%= render "shared/searchbar" %>
-    <%= yield %>
+  <div class="page-container">
+  <div class="navbar-container"><%= render "shared/navbar" %></div>
+  <div class="content-container"><%= yield %></div>
+  <div class="footer-container"><% unless action_name == 'home' %>
+    <%= render "shared/footer" %>
+    <% end %>
+    </div>
+  </div>
   </body>
 </html>
