@@ -1,7 +1,61 @@
-.video {
-  transform: skewX(36deg);
-}
+.container_banner {
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
 
+  .button-home {
+    color: black;
+    background-color: white;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 25px;
+  }
+
+  .button-him {
+    position: absolute;
+    top: 50%;
+    justify-content: center;
+    right: 45%;
+    color: white;
+    background-color: black;
+    padding: 10px 75px;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    transition-duration: 0.5s;
+    opacity: 0.8;
+  }
+
+
+  .button-him:hover {
+    color: black;
+    background-color: white;
+    transition-duration: 0.5s;
+  }
+
+  .button-her {
+    position: absolute;
+    top: 50%;
+    justify-content: center;
+    right: 30%;
+    color: black;
+    background-color: white;
+    padding: 10px 75px;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    transition-duration: 0.5s;
+    opacity: 0.8;
+  }
+  .button-her:hover{
+    color: white;
+    background-color: black;
+    transition-duration: 0.5s;
+  }
+}
 
 .skw-pages {
   overflow: hidden;
@@ -48,7 +102,7 @@ $scrollTime: 1s;
     width: 140%;
     height: 100%;
     transform: skewX($skewDeg * -1);
-
+    background: #000;
 
     .skw-page__half--left & {
       left: -40%;
@@ -84,6 +138,11 @@ $scrollTime: 1s;
       padding-right: 30%;
       transform-origin: 0 100%;
     }
+
+    .skw-page.inactive & {
+      opacity: 0.5;
+      transform: skewX($skewDeg) scale(0.95);
+    }
   }
 
   &__heading {
@@ -92,58 +151,24 @@ $scrollTime: 1s;
     font-size: 25px;
     text-align: center;
   }
-}
 
-.container_banner {
-  display: flex;
-  flex-direction: column;
-  z-index: -1;
-
-  .button-him {
-    position: absolute;
-    top: 60%;
-    justify-content: center;
-    left: 20%;
+  &__description {
+    font-size: 18px;
+    text-align: center;
   }
 
-  .button_her {
-    position: absolute;
-    top: 60%;
-    justify-content: center;
-    right: 20%;
-  }
-  .button-home {
-    color: black;
-    background-color: white;
-    padding: 10px 40px;
-    text-decoration: none;
-    border-radius: 1px;
-    font-size: 25px;
-    transition-duration: 0.7s;
-  }
-  .button-him:hover {
-    color: white;
-    background-color: black;
-    transition-duration: 0.7s;
+  &__link {
+    color: #FFA0A0;
   }
 
-  .button-her {
-    position: absolute;
-    top: 50%;
-    justify-content: center;
-    right: 25%;
-    color: white;
-    background-color: black;
-    padding: 10px 40px;
-    text-decoration: none;
-    border-radius: 1px;
-    font-size: 25px;
-    transition-duration: 0.7s;
-  }
-  .button-her:hover{
-    color: black;
-    background-color: white;
-    transition-duration: 0.7s;
-  }
+  &-1 {
+    .skw-page__half--left .skw-page__content {
+      background-image: url('DressHimNew.gif');
 
+    }
+    .skw-page__half--right .skw-page__content {
+      background-image: url('DressHimNew.gif');
+      background-position: center;
+    }
+  }
 }

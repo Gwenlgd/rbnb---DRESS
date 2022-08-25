@@ -1,44 +1,48 @@
 .footer {
-  background: #E0E0E0;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 75px;
-  padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  height: 60px;
+  padding: 0px 80px;
+  color: rgba(0, 0, 0, 0.3);
 }
 .footer-right {
   display: flex;
   align-items: center;
-  color: white;
+  color: #E0E0E0;
+  padding: 15px;
 }
 .footer-right a {
-  color: white;
+  color: #E0E0E0;
   text-decoration: none;
   font-size: 24px;
-  padding: 0px 10px;
   transition-duration: 0.7s;
 }
 .footer-right a:hover {
   opacity: 0.50;
-  color: #B1BEB9;
+  color: #3C3B3B;
   transition-duration: 0.7s;
+}
+
+i {
+  margin: 0 0 0 35px;
 }
 
 
 /* Dropup Button */
 .dropbtn {
-  background-color: #E0E0E0;
-  color: white;
-  font-size: 48px;
+  background-color: white;
+  color: #E0E0E0;
+  font-size: 30px;
   border: none;
-  padding: 0px 20px;
   transition-duration: 0.7s;
+  width: 75px;
 }
 
 .dropup:hover .dropbtn {
   opacity: 0.50;
-  color: #B1BEB9;
+  color: #3C3B3B;
   transition-duration: 0.7s;
 }
 
@@ -54,20 +58,21 @@
 .dropup-content {
   display: none;
   position: absolute;
-  background-color: #B1BEB9;
-  min-width: 275px;
-  bottom: 60px;
-  font-size: 16px;
+  background-color: #3C3B3B;
+  min-width: 400px;
+  bottom: 45px;
+  left: 10px;
+  font-size: 20px;
   border-radius: 5px;
-  padding: 15px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 /* Links inside the dropup */
 .dropup-content a {
   color: white;
-  padding: 12px 16px;
+  padding: 15px 0px 15px 0px;
   text-decoration: none;
   display: block;
   text-align: center;

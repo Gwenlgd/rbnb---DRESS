@@ -3,11 +3,18 @@
   color: $black;
   text-indent: 20px;
   font-size: 42px;
-  margin: 30px;
-  h1 {
-    font-family: 'Prata', serif
-  }
+  margin-top: 33px;
+  margin: -20px;
+  padding-top: 10px;
+
 }
+
+h1 {
+  font-family: 'Prata', serif;
+  font-size: 30px;
+  padding-left: 30px;
+}
+
 
 
 .navbar-dressus .navbar-collapse {
@@ -24,11 +31,15 @@
   text-align: center;
 }
 
+.search-form-control {
+  color: #E0E0E0;
+}
+
 .search-form-control .form-control {
-  height: 2rem;
+  height: 25px;
   // box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   border: 1px solid #E0E0E0;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .search-form-control .form-control:focus {
@@ -37,40 +48,109 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
+.simple-form-search {
+  margin-right: -42px;
+
+}
+
 //globe_icon
+
 .fa-solid fa-globe {
-  color: $darkgrey;
+  color: #E0E0E0;
 }
 
 .fa-solid fa-globe a:hover {
-    opacity: 0.50;
-    color: #B1BEB9;
+  color: #3C3B3B;
+  transition-duration: 0.7s;
 }
 
 //heart_icon
 .fa-solid fa-heart {
-  color: $darkgrey;
+  color: #E0E0E0;
 }
 
 //bag_icon
 .fa-solid fa-bag-shopping {
-  color: $darkgrey;
+  color: #E0E0E0;
 }
 
-
-//dropdown_icon
-.fa-solid fa-bars {
-  color: $darkgrey;
+.fa-solid fa-square-user {
+  color: black;
 }
+
 
 //and_dropdown_feature
 .navbar-icons {
   a {
-    color: $darkgrey;
+    color: #E0E0E0;
 
     &:hover {
-      opacity: 1;
-      color: #B1BEB9;
+
+      color: #3C3B3B;
+      transition-duration: 0.7s;
     }
   }
+  margin-right: 40px;
+}
+
+
+
+/* Dropup Button */
+.dropbtn {
+  background-color: white;
+  color: #E0E0E0;
+  font-size: 30px;
+  border: none;
+  transition-duration: 0.7s;
+  width: 75px;
+
+}
+
+.dropdown:hover .dropbtn {
+  color: #3C3B3B;
+  transition-duration: 0.7s;
+}
+
+
+
+/* The container <div> - needed to position the dropup content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+    position: absolute;
+    background-color: #3C3B3B;
+    min-width: 300px;
+    top: 40px;
+    right: 7px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropup */
+.dropdown-content a {
+  color: white;
+  padding: 15px 0px 15px 0px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Change color of dropup links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd
+
+}
+
+/* Show the dropup menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
