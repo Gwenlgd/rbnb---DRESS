@@ -3,7 +3,7 @@ class Listing < ApplicationRecord
   has_many :rentals
   has_many :reviews, through: :rentals
 
-  has_one_attached :photo
+  has_many_attached :photos
 
   validates :title, presence: true, length: { maximum: 30 }
   validates :description, length: { minimum: 10, maximum: 500 }
