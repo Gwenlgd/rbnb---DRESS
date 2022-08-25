@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resources :rentals, except: [:edit, :update]
   end
 
-  resources :rentals, only: [] do
+  resources :rentals, only: [:show] do
     resources :reviews, only: [:create, :new]
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
