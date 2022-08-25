@@ -2,11 +2,11 @@
 display: flex;
 background-color: $black;
 justify-content: space-around;
-letter-spacing: 0.5px;
+letter-spacing: 1px;
 align-content: center;
 height: 35px;
 padding: 0px 30px;
-font-family: Open Sans;
+font-weight: lighter;
 
 .dropdown-item{
     align-self: center;
@@ -15,29 +15,26 @@ font-family: Open Sans;
   }
 }
 
-
-
 .search-container {
   width: 100%;
   display: flex;
-  background-color: #3C3B3B;
+  background-color: $black;
   justify-content: space-around;
   height: 40px;
+  margin-top: 5px;
 }
 
 .dropsearchbtn {
-  background-color: #3C3B3B;
+  background-color: $black;
   color: white;
   font-size: 16px;
   border: none;
-  transition-duration: 0.7s;
   width: 140px;
   margin-top: 6px;
 }
 
 .searchdown:hover .dropbtn {
-  color: #3C3B3B;
-  transition-duration: 0.7s;
+  color: rgb(170, 170, 170);
 }
 
 
@@ -51,33 +48,30 @@ font-family: Open Sans;
 /* Dropup content (Hidden by Default) */
 .searchdown-content {
   display: none;
-  display: none;
   position: absolute;
-  background-color: #3C3B3B;
-  min-width: 189px;
+  background-color: white;
+  min-width: 180px;
   top: 40px;
   right: -19px;
   font-size: 16px;
-  border-radius: 0px;
-  padding: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 /* Links inside the dropup */
 .searchdown-content a {
-  color: white;
+  color: black;
   padding: 15px 0px 15px 0px;
   text-decoration: none;
   display: block;
   text-align: center;
-  border-radius: 5px;
 }
 
 /* Change color of dropup links on hover */
 .searchdown-content a:hover {
-  background-color: #ddd
-
+  transition-duration: 0.7s;
+  background-color: $black;
+  color: white;
 }
 
 /* Show the dropup menu on hover */
