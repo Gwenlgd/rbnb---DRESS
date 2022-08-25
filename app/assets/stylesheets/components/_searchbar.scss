@@ -1,12 +1,16 @@
 .searchbar {
 display: flex;
 background-color: $black;
-justify-content: space-between;
+justify-content: space-around;
+letter-spacing: 0.5px;
 align-content: center;
-height: 40px;
+height: 35px;
 padding: 0px 30px;
+font-family: Open Sans;
   p {
     align-self: center;
     margin: 0px;
+    font-weight: bold;
+    color: white;
   }
 }
