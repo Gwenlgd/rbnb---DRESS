@@ -29,7 +29,8 @@
       <div class="card-details-item-size"><%= @listing.size %></div>
       <div class="card-details-item-description"><%= @listing.description %></div>
       <div class="btn-add">
-      <a href=“#”>Add to bag</a>
+      <%= link_to "Add to bag", new_listing_rental_path(@listing) %>
+      <%# <a href=“#”>Add to bag</a> %>
     </div>
   </div>
 </div>

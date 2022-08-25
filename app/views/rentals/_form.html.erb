@@ -1,0 +1,15 @@
+<div class="page-container">
+  <div class="booking-form" >
+      <%= simple_form_for [@listing, @rental] do |f| %>
+      <div class="form-inputs">
+        <h2><%= f.input :start_date, as: :date, html5: true, label: "Check-in", required: false %></h2>
+      </div>
+      <div class="form-inputs">
+        <h2><%= f.input :end_date, as: :date, html5: true, label: "Checkout", required: false  %></h2>
+      </div>
+      <div class="form-actions">
+        <%= f.button :submit %>
+      </div>
+      <% end %>
+  </div>
+</div>
