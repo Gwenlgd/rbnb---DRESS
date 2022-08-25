@@ -101,9 +101,18 @@ $scrollTime: 1s;
 
   .button-him {
     position: absolute;
-    top: 50%;
+    top: 60%;
     justify-content: center;
-    left: 25%;
+    left: 20%;
+  }
+
+  .button_her {
+    position: absolute;
+    top: 60%;
+    justify-content: center;
+    right: 20%;
+  }
+  .button-home {
     color: black;
     background-color: white;
     padding: 10px 40px;

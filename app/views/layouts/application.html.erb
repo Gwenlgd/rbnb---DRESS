@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rbnb</title>
+    <title>DressUs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -14,12 +14,15 @@
   <body>
   <div class="page-container">
   <div class="navbar-container"><%= render "shared/navbar" %></div>
+  <div class="searchbar-container"><% unless action_name == 'home' %>
+    <%= render "shared/searchbar" %>
+    <% end %>
+    </div>
   <div class="content-container"><%= yield %></div>
   <div class="footer-container"><% unless action_name == 'home' %>
     <%= render "shared/footer" %>
     <% end %>
     </div>
   </div>
-
   </body>
 </html>
