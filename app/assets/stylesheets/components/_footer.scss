@@ -38,6 +38,8 @@ i {
   border: none;
   transition-duration: 0.7s;
   width: 75px;
+  display: flex;
+  align-items: center;
 }
 
 .dropup:hover .dropbtn {
