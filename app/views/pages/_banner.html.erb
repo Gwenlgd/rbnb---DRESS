@@ -1,11 +1,24 @@
-
-
-<div class="container_banner">
-  <%= video_tag "banner_video.mp4", autoplay: :autoplay, loop: true, muted: true, class: "video" %>
-  <div class="button_him">
-    <%= link_to "DressHim", listings_path, class: "button-home" %>
+<div class="skw-pages">
+  <div class="skw-page skw-page-1 active">
+    <div class="skw-page__half skw-page__half--left">
+      <div class="skw-page__skewed">
+       <%= video_tag "DressHim.mp4", autoplay: :autoplay, loop: true, muted: true, class: "video" %>
+        <div class="skw-page__content">
+            <div class="container_banner">
+                <%= link_to "DressHim", "#", class: "button-him" %>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="skw-page__half skw-page__half--right">
+      <div class="skw-page__skewed">
+        <%= video_tag "DressHer.mp4", autoplay: :autoplay, loop: true, muted: true, class: "video" %>
+        <div class="skw-page__content">
+            <div class="container_banner">
+                <%= link_to "DressHer", "#", class: "button-her" %>
+            </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="button_her">
-    <%= link_to "DressHer", listings_path, class: "button-home" %>
-  </div>
- </div>
+</div>
