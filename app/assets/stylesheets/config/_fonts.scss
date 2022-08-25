@@ -1,9 +1,17 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Prata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Prata&display=swap');
 // Define fonts for body and headers
-$body-font: "Open Sans rev=1";
-$headers-font: "Prata', serif";
+$body-font: "Open Sans";
+$headers-font: "Open Sans";
+
+h1 {
+  font-style: "Prata', serif" !important;
+}
+
+h2 {
+  font-size: 23px !important;
+}
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
