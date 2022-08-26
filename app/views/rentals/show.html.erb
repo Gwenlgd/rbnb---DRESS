@@ -1,23 +1,26 @@
 <%# _items_bag.scss %>
 <div class="page-container">
-  <div class="all-bag-page">
-    <div class="card-bag-item ">
-        <div class="card-bag-images-item">
-          <div class="title-bag">Shopping Bag</div>
-          <%= cl_image_tag @listing.photos[0].key %>
+  <div class="my-container">
+    <div class="all-bag-page">
+      <div class="card-bag-item ">
+          <div class="card-images-bag">
+            <div class="title-bag">Shopping Bag</div>
+            <%= cl_image_tag @listing.photos[0].key %>
+          </div>
+
+        <div class="bag-item">
+          <div class="card-bag-item-brand"><%= @listing.brand %></i></div>
+          <div class="card-bag-item-description"><%= @listing.description %></div>
+          <div class="card-bag-item-size">Size <%= @listing.size %></div>
+          <div class="card-bag-item-price">€ <%= @listing.price %></div>
         </div>
 
-      <div class="bag-item">
-        <div class="card-bag-item-brand"><%= @listing.brand %></i></div>
-        <div class="card-bag-item-price">€ <%= @listing.price %></div>
-        <div class="card-bag-item-size"><%= @listing.size %></div>
-        <div class="card-bag-item-description"><%= @listing.description %></div>
-
-
-      <div class="order-summary">
-        <%= image_tag "order-summary.png", :class => "img_order"  %>
-          <img src="app/assets/images/order-summary.png" alt="Order Summary">
-      </div>
+        <div class="order-summary">
+          <%= image_tag "order-summary.png", :class => "img_order"  %>
+          <div class="order-button">
+            <%= link_to "Add to bag", dashboard_path(@listing)%>
+          </div>
+        </div>
     </div>
   </div>
 </div>

@@ -1,148 +1,92 @@
-.card-bag-item {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin: 20px;
-  margin-top: 100px;
-}
-
-.card-bag-images-item img{
-  height: 400px;
-  width: 100%;
-  object-fit: contain;
-  object-position: left;
-  justify-content: center;
-}
-
-.title-bag {
-  width: 100%;
-  font-family: Open Sans;
-  font-size: 35px;
-  color: black;
-  margin-bottom: 20px;
-}
-
-
-.bag-item {
-  color: black;
-  align-self: center;
-  align-items: center;
-
-  .card-bag-item-brand{
-    font-size: 30px;
-  }
-
-  .card-bag-item-title{
-    font-size: 35px;
-    font-weight: bold;
-  }
-
-  .card-bag-item-price {
-    font-size: 28px;
-    font-weight: lighter;
-  }
-
-  .btn-add {
-    width: 110px;
-    height: auto;
-    background: #373636;
-    text-align: center;
-    border-radius: 2px;
-    transition: background 0.3s ease;
-    margin-top: 20px;
-    padding: 10px;
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  .btn-add:hover {
-    background: $white;
-    color: $black;
-    border-color: #373636;
-    border-radius: 2px;
-  }
-}
-
-
 .all-bag-page {
-  margin: 30px;
-  padding: 15px 35px 0px 155px;
+  // margin: 10px;
+  margin-top: 40px;
+  // padding: 15px 35px 0px 155px;
+  font-family: Open Sans;
 
   .card-bag-item {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin: 30px;
-    height: 500px;
-    width: 600px;
-  }
 
-  .card-images-item-big img{
-    height: 496px;
-    margin-left: 20px;
-    margin-right: 20px;
-    object-fit: contain;
-    // box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    box-shadow: rgba(50, 50, 93, 0.15) 0px 13px 27px -5px, rgba(0, 0, 0, 0.10) 0px 8px 16px -8px;
-    // box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  }
-
-  .card-images-item-small img{
-    height: 155px;
-    margin-bottom: 15px;
-    // box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    box-shadow: rgba(50, 50, 93, 0.15) 0px 13px 27px -5px, rgba(0, 0, 0, 0.10) 0px 8px 16px -8px;
-    // box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  }
-
-  .details-item {
-    color: black;
-    margin-left: 20px;
-    width: max-content;
-    padding: 85px 0px 36px 116px;
-    font-family: Open Sans;
-
-    .card-details-item-brand{
+    .title-bag {
       font-size: 30px;
       padding-bottom: 10px;
+      font-family: Open Sans;
+      color: black;
     }
+  }
 
-    .card-details-item-title{
-      font-size: 35px;
+
+  .card-images-bag img {
+    height: 490px;
+    margin-top: 20px;
+    margin-right: 20px;
+    // object-fit: contain;
+    box-shadow: rgba(50, 50, 93, 0.15) 0px 13px 27px -5px, rgba(0, 0, 0, 0.10) 0px 8px 16px -8px;
+  }
+
+  .bag-item {
+    color: black;
+    width: max-content;
+    padding: 200px 0px 35px 30px;
+    font-family: Open Sans;
+
+    .card-bag-item-brand {
+      font-size: 30px;
+      padding-bottom: 4px;
       font-weight: bold;
-      padding-bottom: 10px;
     }
 
-    .card-details-item-price {
+    .card-bag-item-price {
       font-size: 28px;
       font-weight: lighter;
-      padding-bottom: 10px;
     }
 
-    .btn-add {
+    .card-bag-item-size {
+      font-size: 16px;
+      font-weight: lighter;
+    }
+
+    .card-bag-item-description {
+        font-size: 16px;
+        font-weight: lighter;
+        font-style: italic;
+        padding-bottom: 4px;
+    }
+
+
+  }
+
+  .order-summary {
+    margin-left: 141px;
+    margin-top: 95px;
+
+    img {
+      height: 420px;
+      box-shadow: rgba(50, 50, 93, 0.15) 0px 13px 27px -5px, rgba(0, 0, 0, 0.10) 0px 8px 16px -8px;
+    }
+  }
+
+  .order-button {
+    a {
       width: 110px;
-      height: auto;
       background: #373636;
       text-align: center;
       border-radius: 2px;
       transition: background 0.3s ease;
-      margin-top: 20px;
-      padding: 10px;
-    }
-
-    a {
+      // margin-top: 30px;
+      margin: 129px;
+      padding: 15px;
       text-decoration: none;
       color: white;
     }
-    .btn-add:hover {
+
+    a:hover{
       border-radius: 2px;
       background-color: #666565;
       transition-duration: 0.5s;
       border-color: #666565 ;
-    }
-
-    a:hover{
       text-decoration: none;
     }
-  }
+}
 }
