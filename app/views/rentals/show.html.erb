@@ -1,4 +1,6 @@
 <%# _items_bag.scss %>
+<div class="my-container2">
+
 <div class="page-container">
   <div class="all-bag-page">
     <div class="card-bag-item ">
@@ -16,8 +18,14 @@
 
       <div class="order-summary">
         <%= image_tag "order-summary.png", :class => "img_order"  %>
-          <img src="app/assets/images/order-summary.png" alt="Order Summary">
+          <div class="btn-add" >
+          <%= link_to "Add to bag", new_listing_rental_path(@listing)%>
+        </div>
       </div>
+
+
+
     </div>
   </div>
+</div>
 </div>
