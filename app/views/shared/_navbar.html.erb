@@ -1,22 +1,15 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon py-4">
   <div class="container-fluid">
     <div class="container-logo">
-     <img src="du" alt="">
-      <%= link_to listings_path(category: "Men"), class: "navbar-title" do %>
-        <h1>DressHim</h1>
-      <% end %>
-      <%= link_to listings_path(category: "Woman"), class: "navbar-title" do %>
-        <h1 id="dressher" >/ DressHer</h1>
-      <% end %>
-
-      <%#= link_to root_path, class: "navbar-title" do %>
-        <%# <h1 id="home-button">/ DressUs</#h1> %>
-       <%# end %>
-
-
-
-
-
+        <%= link_to root_path, class: "navbar-title" do %>
+      <h1>.</h1>
+    <% end %>
+        <%= link_to listings_path(category: "Men"), class: "navbar-title" do %>
+          <h1>DressHim</h1>
+        <% end %>
+        <%= link_to listings_path(category: "Woman"), class: "navbar-title" do %>
+          <h1 id="dressher" >/ DressHer</h1>
+        <% end %>
     </div>
     <div class="d-flex align-items-center">
       <%= simple_form_for :search, url: root_path, method: :get do |f| %>
@@ -37,7 +30,8 @@
             <div class="dropdown-content">
               <a href="#">Profile</a>
               <a href="#">Settings</a>
-              <a href="#">Sign In  /  Log In</a>
+                <%= link_to "Sign In / Sign Out", new_user_registration_path%>
+                <%= link_to "Log In", new_user_session_path%>
             </div>
         </div>
    </div>
