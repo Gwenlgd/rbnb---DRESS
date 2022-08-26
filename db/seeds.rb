@@ -37,7 +37,7 @@ puts "Creating listings..."
 #men's clothes
 
 # SEEDS DONE
-hugoboss = Listing.create!(category: "Men",title: "Suit, Hugo Boss", description: "New Suit, never wear. Perfect for a wedding", size: "52", price: "150", location: "London", brand: "Hugo Boss", user: jules )
+hugoboss = Listing.create!(category: "Men",title: "Suit, Hugo Boss", description: "New Suit, never worn. Perfect for a wedding", size: "52", price: "150", location: "London", brand: "Hugo Boss", user: jules )
 file = URI.open("https://images.hugoboss.com/is/image/boss/hbeu50480307_021_300?$large$=&fit=crop,1&align=1,1&wid=768&qlt=80&fmt=webp")
 hugoboss.photos.attach(io: file, filename: "suits.png", content_type: "image/png")
 file = URI.open("https://images.hugoboss.com/is/image/boss/hbeu50480307_021_360?$large$=&fit=crop,1&align=1,1&wid=1500&hei=2275")
@@ -49,7 +49,7 @@ hugoboss.photos.attach(io: file, filename: "suits.png", content_type: "image/png
 hugoboss.save
 
 # SEEDS DONE
-defrusac = Listing.create!(category: "Men", title: "Beige Suit, 3 pieces", description: "Beige Suit, perfect for the summer" , size: "48", price: "150", location: "Amsterdam", brand: "De Frusac", user: grant )
+defrusac = Listing.create!(category: "Men", title: "Beige Suit, 3 pieces", description: "Beige Suit, perfect for the summer", size: "48", price: "150", location: "Amsterdam", brand: "De Frusac", user: grant )
 file = URI.open("https://cdn.shopify.com/s/files/1/1481/1280/products/N6vbQrpI.jpg?v=1633807332")
 defrusac.photos.attach(io: file, filename: "suits2.jpg", content_type: "image/jpg")
 file = URI.open("https://cdn.shopify.com/s/files/1/1481/1280/products/CyPiMKaY_1024x.jpg?v=1633807331")
