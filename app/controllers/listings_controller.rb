@@ -4,7 +4,7 @@ class ListingsController < ApplicationController
   def index
     if params[:category] == "Men"
     @listings = Listing.where(category:"Men")
-    elsif
+    elsif params[:category] == "Women"
     @listings = Listing.where(category:"Women")
     else
     @listings = Listing.all
