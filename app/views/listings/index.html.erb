@@ -1,6 +1,5 @@
-<h1>Best rentals</h1>
-
 <div class="page-container">
+<%# <h2>Best rentals</h2> %>
   <div class="cards">
     <% @listings.each do |listing| %>
       <div class="card-item">
@@ -11,12 +10,13 @@
         <div class="card-item-infos">
         <div>
           <div class="card-item-brand"><%= listing.brand %></div>
-          <div class="card-item-size"><%= listing.size %></div>
+          <div class="card-item-size"><p>Size <%= listing.size %></p></div>
+
         </div>
         <div>
           <div class="card-item-likes">
             <div class="card-nb-likes">6</div>
-              <i class="fa-regular fa-heart"></i>
+            <div class="card-nb-heart"><i class="fa-regular fa-heart"></i></div>
             </div>
           </div>
         </div>

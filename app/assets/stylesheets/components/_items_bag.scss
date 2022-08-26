@@ -1,0 +1,65 @@
+.card-bag-item {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 20px;
+  margin-top: 100px;
+}
+
+.card-bag-images-item img{
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+  object-position: left;
+  justify-content: center;
+}
+
+.title-bag {
+  width: 100%;
+  font-family: Open Sans;
+  font-size: 35px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+
+.bag-item {
+  color: black;
+  align-self: center;
+  align-items: center;
+
+  .card-bag-item-brand{
+    font-size: 30px;
+  }
+
+  .card-bag-item-title{
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .card-bag-item-price {
+    font-size: 28px;
+    font-weight: lighter;
+  }
+
+  .btn-add {
+    width: 110px;
+    height: auto;
+    background: #373636;
+    text-align: center;
+    border-radius: 2px;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .btn-add:hover {
+    background: $white;
+    color: $black;
+    border-color: #373636;
+    border-radius: 2px;
+  }
+}
