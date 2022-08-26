@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon py-4">
   <div class="container-fluid">
-  <div class="logo-container">
+    <div class="logo-container">
     <%= link_to root_path, class: "navbar-title" do %>
       <h1>Dress Us</h1>
     <% end %>
@@ -14,15 +14,18 @@
         </div>
       <% end %>
 
-<div class="navbar-icons">
-    <a href="https://www.instagram.com/" target="_blank"><i class="fa-solid fa-globe fa-lg me-4"></i></a>
-    <a href="https://www.facebook.com/" target="_blank"><i class="fa-solid fa-heart fa-lg me-4"></i></a>
-    <a href="https://twitter.com/" target="_blank"><i class="fa-solid fa-bag-shopping fa-lg me-4"></i></a>
-    <div class="dropdown">
-    <button class="dropbtn"><i class="fa-solid fa-bars fa-sm"></i></button>
-  <div class="dropdown-content">
-    <a href="#">Profile</a>
-    <a href="#">Settings</a>
-    <%= link_to "Sign In  /  Log In", new_user_session_path%>
+      <div class="navbar-icons">
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-solid fa-globe fa-lg me-4"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-solid fa-heart fa-lg me-4"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fa-solid fa-bag-shopping fa-lg me-4"></i></a>
+        <div class="dropdown">
+        <button class="dropbtn"><i class="fa-solid fa-bars fa-sm"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Profile</a>
+          <a href="#">Settings</a>
+          <%= link_to "Sign In  /  Log In", new_user_session_path%>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
