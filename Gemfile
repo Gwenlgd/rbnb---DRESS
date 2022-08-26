@@ -78,5 +78,5 @@ end
 
 gem "devise"
 gem "cloudinary"
-gem 'bootstrap-datepicker-rails'
+# gem 'bootstrap-datepicker-rails'
 gem "dotenv-rails", groups: [:development, :test]
