@@ -1,26 +1,28 @@
 <div class="page-container">
-<%# <h2>Best rentals</h2> %>
-  <div class="cards">
-    <% @listings.each do |listing| %>
-      <div class="card-item">
-        <%= link_to listing_path(listing) do %>
-        <%= cl_image_tag listing.photos[0].key %>
-        <% end %>
-        <div class="card-item-price">€ <%= listing.price %></div>
-        <div class="card-item-infos">
-        <div>
-          <div class="card-item-brand"><%= listing.brand %></div>
-          <div class="card-item-size"><p>Size <%= listing.size %></p></div>
+  <div class="my-container">
+  <%# <h2>Best rentals</h2> %>
+    <div class="cards">
+      <% @listings.each do |listing| %>
+        <div class="card-item">
+          <%= link_to listing_path(listing) do %>
+          <%= cl_image_tag listing.photos[0].key %>
+          <% end %>
+          <div class="card-item-price">€ <%= listing.price %></div>
+          <div class="card-item-infos">
+          <div>
+            <div class="card-item-brand"><%= listing.brand %></div>
+            <div class="card-item-size"><p>Size <%= listing.size %></p></div>
 
-        </div>
-        <div>
-          <div class="card-item-likes">
-            <div class="card-nb-likes">6</div>
-            <div class="card-nb-heart"><i class="fa-regular fa-heart"></i></div>
+          </div>
+          <div>
+            <div class="card-item-likes">
+              <div class="card-nb-likes">6</div>
+              <div class="card-nb-heart"><i class="fa-regular fa-heart"></i></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
 </div>

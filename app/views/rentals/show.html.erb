@@ -1,28 +1,23 @@
+<%# _items_bag.scss %>
 <div class="page-container">
+  <div class="all-bag-page">
+    <div class="card-bag-item ">
+        <div class="card-bag-images-item">
+          <div class="title-bag">Shopping Bag</div>
+          <%= cl_image_tag @listing.photos[0].key %>
+        </div>
 
-  <div class="card-bag-item ">
-      <div class="card-bag-images-item">
-        <div class="title-bag">Shopping Bag</div>
-        <%= cl_image_tag @listing.photos[0].key %>
+      <div class="bag-item">
+        <div class="card-bag-item-brand"><%= @listing.brand %></i></div>
+        <div class="card-bag-item-price">€ <%= @listing.price %></div>
+        <div class="card-bag-item-size"><%= @listing.size %></div>
+        <div class="card-bag-item-description"><%= @listing.description %></div>
+
+
+      <div class="order-summary">
+        <%= image_tag "order-summary.png", :class => "img_order"  %>
+          <img src="app/assets/images/order-summary.png" alt="Order Summary">
       </div>
-
-    <div class="bag-item">
-      <div class="card-bag-item-brand"><%= @listing.brand %></i></div>
-      <div class="card-bag-item-title"><%= @listing.title %></div>
-      <div class="card-bag-item-price">€ <%= @listing.price %></div>
-      <div class="card-bag-item-size"><%= @listing.size %></div>
-      <div class="card-bag-item-description"><%= @listing.description %></div>
-
-
-    <div class="order-summary">
-      DELIVERY
-      Delivery time
-      Rental period
-
-      Rental price
-      Insurance
-      Delivery
-      Total
     </div>
   </div>
 </div>
