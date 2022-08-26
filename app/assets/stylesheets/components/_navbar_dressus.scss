@@ -9,10 +9,24 @@
 
 }
 
+.container-logo {
+  display: flex;
+  align-items: baseline;
+}
+
 h1 {
   font-family: 'Prata', serif;
   font-size: 30px;
   padding-left: 30px;
+}
+
+#dressher {
+  color: #E0E0E0;
+}
+
+#home-button {
+  color: #E0E0E0;
+  font-size: 16px;
 }
 
 .logo-container {
