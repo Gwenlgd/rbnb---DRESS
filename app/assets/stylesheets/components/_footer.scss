@@ -6,6 +6,9 @@
   height: 60px;
   padding: 0px 80px;
   color: rgba(0, 0, 0, 0.3);
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: #E0E0E0;
 }
 .footer-right {
   display: flex;
@@ -14,15 +17,16 @@
   padding: 15px;
 }
 .footer-right a {
-  color: #E0E0E0;
   text-decoration: none;
   font-size: 24px;
-  transition-duration: 0.7s;
+  opacity: 0.5;
+  color: $black;
+  transition-duration: 0.5s;
 }
 .footer-right a:hover {
-  opacity: 0.50;
-  color: #3C3B3B;
-  transition-duration: 0.7s;
+  color: $black;
+  transition-duration: 0.5s;
+  opacity: 0.9;
 }
 
 i {
@@ -33,17 +37,19 @@ i {
 /* Dropup Button */
 .dropbtn {
   background-color: white;
-  color: #E0E0E0;
-  font-size: 30px;
+  color: $black;
+  font-size: 16px;
   border: none;
-  transition-duration: 0.7s;
-  width: 75px;
+  transition-duration: 0.5s;
+
+  width: 100px;
+  opacity: 0.5;
 }
 
 .dropup:hover .dropbtn {
-  opacity: 0.50;
-  color: #3C3B3B;
-  transition-duration: 0.7s;
+  opacity: 0.9;
+  color: $black;
+  transition-duration: 0.5s;
 }
 
 
@@ -58,31 +64,29 @@ i {
 .dropup-content {
   display: none;
   position: absolute;
-  background-color: #3C3B3B;
-  min-width: 400px;
-  bottom: 45px;
-  left: 10px;
-  font-size: 20px;
-  border-radius: 5px;
-  padding: 0;
+  background-color: white;
+  min-width: 375px;
+  bottom: 40px;
+  left: 30px;
+  font-size: 16px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 /* Links inside the dropup */
 .dropup-content a {
-  color: white;
+  color: black;
   padding: 15px 0px 15px 0px;
   text-decoration: none;
   display: block;
   text-align: center;
-  border-radius: 5px;
 }
 
 /* Change color of dropup links on hover */
 .dropup-content a:hover {
-  background-color: #ddd
-
+  transition-duration: 0.5s;
+  background-color: $black;
+  color: white;
 }
 
 /* Show the dropup menu on hover */

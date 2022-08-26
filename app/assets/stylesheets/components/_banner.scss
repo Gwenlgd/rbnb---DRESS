@@ -19,7 +19,11 @@
     right: 45%;
     color: white;
     background-color: black;
-    padding: 10px 75px;
+    // padding: 10px 75px;
+    width: 270px;
+    height: 57px;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     border-radius: 1px;
     font-size: 25px;
@@ -42,7 +46,11 @@
     right: 30%;
     color: black;
     background-color: white;
-    padding: 10px 75px;
+    // padding: 10px 75px;
+    width: 270px;
+    height: 57px;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     border-radius: 1px;
     font-size: 25px;
@@ -163,11 +171,11 @@ $scrollTime: 1s;
 
   &-1 {
     .skw-page__half--left .skw-page__content {
-      background-image: url('DressHimNew.gif');
+      background-image: url('dresshim.gif');
 
     }
     .skw-page__half--right .skw-page__content {
-      background-image: url('DressHimNew.gif');
+      background-image: url('dressher.gif');
       background-position: center;
     }
   }

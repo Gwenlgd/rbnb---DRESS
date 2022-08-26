@@ -2,15 +2,78 @@
 display: flex;
 background-color: $black;
 justify-content: space-around;
-letter-spacing: 0.5px;
+letter-spacing: 1px;
 align-content: center;
 height: 35px;
 padding: 0px 30px;
-font-family: Open Sans;
-  p {
+font-weight: lighter;
+
+.dropdown-item{
     align-self: center;
     margin: 0px;
-    font-weight: bold;
     color: white;
   }
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+  background-color: $black;
+  justify-content: space-around;
+  height: 40px;
+}
+
+.dropsearchbtn {
+  background-color: $black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  width: 140px;
+  margin-top: 6px;
+}
+
+.searchdown:hover .dropbtn {
+  color: rgb(170, 170, 170);
+}
+
+
+
+/* The container <div> - needed to position the dropup content */
+.searchdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropup content (Hidden by Default) */
+.searchdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 180px;
+  top: 40px;
+  right: -19px;
+  font-size: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropup */
+.searchdown-content a {
+  color: black;
+  padding: 15px 0px 15px 0px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Change color of dropup links on hover */
+.searchdown-content a:hover {
+  transition-duration: 0.7s;
+  background-color: $black;
+  color: white;
+}
+
+/* Show the dropup menu on hover */
+.searchdown:hover .searchdown-content {
+  display: block;
 }
