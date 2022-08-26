@@ -6,7 +6,7 @@
       <div class="skw-page__skewed">
         <div class="skw-page__content">
         <div class="container_banner">
-        <%= link_to "DressHim", listings_path, class: "button-him" %>
+            <%= link_to "DressHim", listings_path(category: "Men"), class: "button-him"; %>
           </div>
 				</div>
       </div>
@@ -15,7 +15,7 @@
       <div class="skw-page__skewed">
         <div class="skw-page__content">
           <div class="container_banner">
-            <%= link_to "DressHer", listings_path, class: "button-her" %>
+            <%= link_to "DressHer", listings_path(category: "Women"), class: "button-her" %>
           </div>
         </div>
       </div>
