@@ -16,9 +16,11 @@ h1 {
   height: 440px;
   width: 247px;
   background: #fffbfb;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   position: relative;
   margin-bottom: 30px;
+  // box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 13px 27px -5px, rgba(0, 0, 0, 0.10) 0px 8px 16px -8px;
 }
 
 .card-item img {
@@ -48,15 +50,19 @@ h1 {
 }
 
 .card-item-brand {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   margin: 0;
 }
 
 .card-item-size {
-  font-size: 16px;
+  font-size: 10px;
   opacity: 0.8;
   margin: 0;
+
+  .sizenb {
+  font-size: 16px
+  }
 
 }
 
@@ -69,6 +75,7 @@ h1 {
 .card-nb-likes {
   font-size: 16px;
   margin: 5px;
+
 }
 
 .fa-regular {

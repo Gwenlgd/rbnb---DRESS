@@ -8,11 +8,12 @@
 @import "searchbar";
 @import "card_items";
 @import "details_items";
-@import "form";
+@import "form_date";
+@import "items_bag";
 
 
 .page-container {
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
- }
+}

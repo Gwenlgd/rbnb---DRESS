@@ -1,36 +1,36 @@
 <div class="page-container">
-
-  <div class="card-detail-item">
-      <div
-        class="card-images-item-big"><%= cl_image_tag @listing.photos[0].key %>
-      </div>
-    <div class="card-images-item-small">
-      <div class="card-images-item-smallone">
-        <% if @listing.photos[1] %>
-        <%= cl_image_tag @listing.photos[1].key %>
-        <% end %>
-      </div>
-      <div class="card-images-item-smalltwo">
-        <% if @listing.photos[2] %>
-        <%= cl_image_tag @listing.photos[2].key %>
-        <% end %>
-      </div>
-      <div class="card-images-item-smallthree">
-        <% if @listing.photos[3] %>
-        <%= cl_image_tag @listing.photos[3].key %>
-        <% end %>
+  <div class="all-cards-item">
+    <div class="card-detail-item">
+        <div class="card-images-item-big">
+        <%= cl_image_tag @listing.photos[0].key %>
         </div>
-    </div>
+      <div class="card-images-item-small">
+        <div class="card-images-item-smallone">
+          <% if @listing.photos[1] %>
+          <%= cl_image_tag @listing.photos[1].key %>
+          <% end %>
+        </div>
+        <div class="card-images-item-smalltwo">
+          <% if @listing.photos[2] %>
+          <%= cl_image_tag @listing.photos[2].key %>
+          <% end %>
+        </div>
+        <div class="card-images-item-smallthree">
+          <% if @listing.photos[3] %>
+          <%= cl_image_tag @listing.photos[3].key %>
+          <% end %>
+          </div>
+      </div>
 
-    <div class="details-item">
-      <div class="card-details-item-brand"><%= @listing.brand %> <i class="fa-regular fa-heart"></i></div>
-      <div class="card-details-item-title"><%= @listing.title %></div>
-      <div class="card-details-item-price">€ <%= @listing.price %></div>
-      <div class="card-details-item-size"><%= @listing.size %></div>
-      <div class="card-details-item-description"><%= @listing.description %></div>
-      <div class="btn-add">
-      <%= link_to "Add to bag", new_listing_rental_path(@listing) %>
-      <%# <a href=“#”>Add to bag</a> %>
+      <div class="details-item">
+        <div class="card-details-item-brand"><%= @listing.brand %></i></div>
+        <div class="card-details-item-title"><%= @listing.title %></div>
+        <div class="card-details-item-price">€ <%= @listing.price %></div>
+        <div class="card-details-item-size"><%= @listing.size %></div>
+        <div class="card-details-item-description"><%= @listing.description %></div>
+        <div class="btn-add" >
+        <%= link_to "Add to bag", new_listing_rental_path(@listing)%>
+      </div>
     </div>
   </div>
 </div>
