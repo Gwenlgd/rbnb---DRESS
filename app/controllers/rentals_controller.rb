@@ -3,7 +3,7 @@ class RentalsController < ApplicationController
   before_action :set_listing, only: [:new, :create]
 
   def index
-    @rentals = rental.all
+    @rentals = Rental.all
   end
 
   def show
