@@ -6,7 +6,7 @@
 </div>
 <div class="signupform">
   <div class="signuptitle">
-  <h2>Sign up to checkout</h2>
+  <h2 class="mt-4">Sign up to checkout</h2>
   </div>
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name),
     data: {turbo: false}) do |f| %>
@@ -29,12 +29,12 @@
                   label: false,
                   placeholder: "Password Confirmation",
                   required: true,
-                  input_html: { autocomplete: "new-password", class: "input-form" } %>
+                  input_html: { autocomplete: "new-password", class: "input-form mb-4" } %>
     </div>
 
     <div class="form-actions">
       <%= f.button :submit, "Sign up", class: "btn-white" %>
-      <%= link_to "Log in", new_session_path(resource_name), class: " btn btn-white" %>
+      <%= link_to "Log in", new_session_path(resource_name), class: "btn btn-signup-forgotpassword" %>
     </div>
   <% end %>
 </div>
