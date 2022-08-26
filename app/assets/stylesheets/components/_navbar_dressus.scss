@@ -15,7 +15,9 @@ h1 {
   padding-left: 30px;
 }
 
-
+.logo-container {
+  display: flex;
+}
 
 .navbar-dressus .navbar-collapse {
   flex-grow: 0;
@@ -39,14 +41,18 @@ h1 {
   height: 25px;
   // box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   border: 1px solid #E0E0E0;
-  border-radius: 5px;
   font-size: 14px;
+  width: 115px;
+}
+
+.search-form-control .form-control:hover {
+  width: 215px;
 }
 
 .search-form-control .form-control:focus {
   border: 1px solid #E0E0E0;
   outline: none !important;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+
 }
 
 .simple-form-search {
@@ -85,12 +91,15 @@ h1 {
 
   a {
     color: #E0E0E0;
+    transition-duration: 0.5s;
 
     &:hover {
 
       color: #3C3B3B;
-      transition-duration: 0.7s;
+      transition-duration: 0.5s;
     }
+
+
   }
 
   .fa-solid {
@@ -106,19 +115,17 @@ h1 {
 /* Dropup Button */
 .dropbtn {
   background-color: white;
-  color: #E0E0E0;
+  color: #c8c8c8;
   font-size: 30px;
   border: none;
   transition-duration: 0.7s;
   width: 75px;
-
 }
 
 .dropdown:hover .dropbtn {
   color: #3C3B3B;
   transition-duration: 0.7s;
 }
-
 
 
 /* The container <div> - needed to position the dropup content */
@@ -129,36 +136,42 @@ h1 {
 
 /* Dropup content (Hidden by Default) */
 .dropdown-content {
-  display: none;
+    display: none;
     position: absolute;
-    background-color: #3C3B3B;
+    background-color: white;
     min-width: 300px;
     top: 40px;
     right: 7px;
-    font-size: 20px;
-    border-radius: 5px;
-    padding: 0;
+    font-size: 16px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 /* Links inside the dropup */
 .dropdown-content a {
-  color: white;
+  color: black;
   padding: 15px 0px 15px 0px;
   text-decoration: none;
   display: block;
   text-align: center;
-  border-radius: 5px;
 }
 
 /* Change color of dropup links on hover */
 .dropdown-content a:hover {
   text-decoration: solid;
+  transition-duration: 0.7s;
+  background-color: $black;
+  color: white;
 
 }
 
 /* Show the dropup menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+#dress-her {
+  color: #E0E0E0;
+  font-weight: lighter;
 }
