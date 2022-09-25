@@ -7,7 +7,7 @@
         <%= link_to listings_path(category: "Men"), class: "navbar-title" do %>
           <h1>DressHim</h1>
         <% end %>
-        <%= link_to listings_path(category: "Woman"), class: "navbar-title" do %>
+        <%= link_to listings_path(category: "Women"), class: "navbar-title" do %>
           <h1 id="dressher" >/ DressHer</h1>
         <% end %>
     </div>
@@ -30,8 +30,12 @@
             <div class="dropdown-content">
               <a href="#">Profile</a>
               <a href="#">Settings</a>
+              <% if current_user %>
+              <%= button_to "logout", destroy_user_session_path, method: :delete  %>
+              <% else %>
                 <%= link_to "Sign In / Sign Out", new_user_registration_path%>
                 <%= link_to "Log In", new_user_session_path%>
+              <% end %>
             </div>
         </div>
    </div>
