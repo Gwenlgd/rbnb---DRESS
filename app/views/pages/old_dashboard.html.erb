@@ -1,0 +1,19 @@
+<div class="page-container">
+  <div class="my-container">
+  <h2>In your bag:</h2>
+    <div class="cards-dash">
+      <% @rentals.each do |rental| %>
+        <div class="card-item-dash">
+          <%= cl_image_tag rental.listing.photos[0].key %>
+          <div class="card-item-price-dash">€ <%= rental.listing.price %></div>
+            <div class="card-item-infos-dash">
+              <div class="card-item-date-dash">
+                <div class="card-date-start"><%= rental.start_date %> / <%= rental.end_date %> </div>
+                  <div class="card-status"><%= rental.status %></div>
+              </div>
+            </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
