@@ -1,3 +1,7 @@
+// SHOW RENTAL
+
+// DISPLAY PAGE
+
 .all-bag-page {
   // margin: 10px;
   margin-top: 40px;
@@ -16,6 +20,7 @@
     }
   }
 
+// PICTURE RENTAL
 
   .card-images-bag img {
     height: 490px;
@@ -24,6 +29,8 @@
     // object-fit: contain;
     box-shadow: rgba(50, 50, 93, 0.15) 0px 13px 27px -5px, rgba(0, 0, 0, 0.10) 0px 8px 16px -8px;
   }
+
+  // DESCRIPTION PRODUCT
 
   .bag-item {
     color: black;
@@ -53,29 +60,110 @@
         font-style: italic;
         padding-bottom: 4px;
     }
-
-
   }
+
+  // ORDER SUMMARY
 
   .order-summary {
     margin-left: 30px;
     margin-top: 95px;
+    height: 420px;
+    width: 390px;
+    background-color: #E1E1E1;
 
-    img {
-      height: 420px;
-      box-shadow: rgba(50, 50, 93, 0.15) 0px 13px 27px -5px, rgba(0, 0, 0, 0.10) 0px 8px 16px -8px;
+    .card-summary {
+      // display: grid;
+      margin: 25px;
     }
+
   }
 
+  // DETAIL LINE
+
+  .line {
+    background-color: white;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  // DETAILS ORDER SUMMARY
+  .order-sum-title {
+    color: #373636;
+    font-weight: bold;
+  }
+  .order-parag {
+    color: #373636;
+  }
+
+  .order-chosen {
+    color: #373636;
+    font-weight: bold;
+    align-items: center;
+  }
+
+  .order-delivery {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+
+  .order-rental-period {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+
+  }
+
+  .order-rental-price {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+
+  }
+
+  .order-insurance-price {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+
+  }
+
+  .order-delivery-price {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+
+  }
+
+  .order-total-price {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+
+    .order-parag {
+      p {
+        font-size: 20px;
+      }
+    }
+
+  }
+
+  // BUTTON
+
   .order-button {
+    text-align: -webkit-center;
+
     a {
       width: 110px;
       background: #373636;
       text-align: center;
+      align-items: center;
       border-radius: 2px;
       transition: background 0.3s ease;
-      // margin-top: 30px;
-      margin: 129px;
+      margin-top: 30px;
+      // margin: 129px;
       padding: 15px;
       text-decoration: none;
       color: white;
@@ -88,5 +176,5 @@
       border-color: #666565 ;
       text-decoration: none;
     }
-}
+  }
 }
