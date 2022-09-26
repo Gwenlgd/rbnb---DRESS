@@ -1,18 +1,21 @@
 <div class="page-container">
   <div class="my-container">
+  <h2>All your rentals:</h2>
     <div class="cards-dash">
-      <div class="card-item-dash">
-        <% @rentals.each do |rental| %>
+      <% @rentals.each do |rental| %>
+        <div class="card-item-dash">
+            <div class="card-item-infos-dash">
           <%= cl_image_tag rental.listing.photos[0].key %>
-          <div class="card-item-price-dash">€ <%= rental.listing.price %></div>
-        <div class="card-item-infos-dash">
-        <div class="card-item-date-dash">
-          <div class="card-date-start"><%= rental.start_date %> / <%= rental.end_date %> </div>
-          <div class="card-status"><%= rental.status %></div>
+              <div class="card-item-date-dash">
+
+                <div class="card-date-start"><p>Rental period: </p><%= rental.start_date.strftime('%d-%m') %> / <%= rental.end_date.strftime('%d-%m %Y') %> </div>
+                <div class="card-status"><p>Status:</p><%= rental.status %></div>
+                <div class="card-user-listing"><p>Rented by:</p> &nbsp;&nbsp; <%= rental.listing.user.first_name %></div>
+
+              </div>
+            </div>
         </div>
-        <% end %>
-        </div>
-      </div>
-     </div>
+      <% end %>
+    </div>
   </div>
 </div>

@@ -1,5 +1,5 @@
 class ListingsController < ApplicationController
-  before_action :set_listing, only: [:show]
+  before_action :set_listing, only: [:show, :destroy]
 
   def index
     if params[:category] == "Men"
@@ -13,6 +13,11 @@ class ListingsController < ApplicationController
 
   def show
   end
+
+  # def destroy
+  #   @recipe.destroy
+  #   redirect_to listing_rentals_path, status: :see_other
+  # end
 
   private
 
