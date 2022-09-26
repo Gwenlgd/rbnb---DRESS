@@ -15,6 +15,7 @@
           <div class="card-bag-item-description"><%= @listing.description %></div>
           <div class="card-bag-item-size">Size <%= @listing.size %></div>
           <div class="card-bag-item-price">€ <%= @listing.price %></div>
+          <div class="card-bag-item-user">Rented by: &nbsp;&nbsp; <%= @rental.listing.user.first_name %></div>
         </div>
         <div class="order-summary">
           <div class="card-summary">
