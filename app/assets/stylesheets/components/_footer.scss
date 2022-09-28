@@ -3,8 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
-  padding: 0px 80px;
+  height: 56px;
+  padding: 0px 55px;
   color: rgba(0, 0, 0, 0.3);
   border-top-style: solid;
   border-width: 1px;
@@ -19,6 +19,7 @@
 .footer-right a {
   text-decoration: none;
   font-size: 24px;
+  width: 24px;
   opacity: 0.5;
   color: $black;
   transition-duration: 0.5s;
@@ -38,7 +39,7 @@ i {
 .dropbtn {
   background-color: white;
   color: $black;
-  font-size: 16px;
+  font-size: 24px;
   border: none;
   transition-duration: 0.5s;
 

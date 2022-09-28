@@ -22,14 +22,13 @@
               <%= render "shared/searchbar" %>
               <% end %>
             </div>
-
+      </div>
         <div class="content-container"><%= yield %></div>
           <div class="footer-container"><% unless action_name == 'home' %>
             <%= render "shared/footer" %>
             <% end %>
           </div>
         </div>
-      </div>
     </div>
   </body>
 </html>

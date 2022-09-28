@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon py-4">
   <div class="container-fluid">
-  <div class="container-logo">
-  <%= link_to root_path, class: "navbar-title" do %>
+    <div class="container-logo">
+<%= link_to root_path, class: "navbar-title" do %>
     <h1>.</h1>
   <% end %>
   <%= link_to root_path, class: "navbar-title" do %>
@@ -21,14 +21,18 @@
   <div class="navbar-icons">
       <a href="https://www.instagram.com/" target="_blank"><i class="fa-solid fa-globe fa-lg me-4"></i></a>
       <a href="https://www.facebook.com/" target="_blank"><i class="fa-solid fa-heart fa-lg me-4"></i></a>
-      <a href="https://twitter.com/" target="_blank"><i class="fa-solid fa-bag-shopping fa-lg me-4"></i></a>
+      <a href= link_to target="_blank"><i class="fa-solid fa-bag-shopping fa-lg me-4"></i></a>
         <div class="dropdown">
-          <button class="dropbtn"><i class="fa-solid fa-bars fa-sm"></i></button>
+          <i class="fa-solid fa-bars "></i>
             <div class="dropdown-content">
               <a href="#">Profile</a>
               <a href="#">Settings</a>
-              <%= link_to "Sign In / Log In", new_user_session_path%>
+              <% if current_user %>
+              <%= button_to "logout", destroy_user_session_path, method: :delete  %>
+              <% else %>
+                <%= link_to "Sign In / Sign Out", new_user_registration_path%>
                 <%= link_to "Log In", new_user_session_path%>
+              <% end %>
             </div>
         </div>
    </div>

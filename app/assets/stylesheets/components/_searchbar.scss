@@ -19,7 +19,8 @@ font-weight: lighter;
   width: 100%;
   display: flex;
   background-color: $black;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
   height: 40px;
 }
 
@@ -27,10 +28,12 @@ font-weight: lighter;
   background-color: $black;
   color: white;
   font-size: 16px;
+  letter-spacing: 1px;
   border: none;
-  width: 140px;
-  margin-top: 6px;
+  width: 200px;
+  height: 40px;
 }
+
 
 .searchdown:hover .dropbtn {
   color: rgb(170, 170, 170);
@@ -48,20 +51,19 @@ font-weight: lighter;
 .searchdown-content {
   display: none;
   position: absolute;
-  background-color: white;
-  min-width: 180px;
+  background-color: $black;
+  min-width: 200px;
   top: 40px;
-  right: -19px;
   font-size: 16px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 /* Links inside the dropup */
 .searchdown-content a {
-  color: black;
+  color: white;
   padding: 15px 0px 15px 0px;
   text-decoration: none;
+  letter-spacing: 1px;
   display: block;
   text-align: center;
 }
@@ -69,8 +71,8 @@ font-weight: lighter;
 /* Change color of dropup links on hover */
 .searchdown-content a:hover {
   transition-duration: 0.7s;
-  background-color: $black;
-  color: white;
+  background-color: white;
+  color: $black;
 }
 
 /* Show the dropup menu on hover */

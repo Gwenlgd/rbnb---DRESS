@@ -1,12 +1,18 @@
 .navbar-title {
   text-decoration: none;
   color: $black;
-  text-indent: 20px;
-  font-size: 42px;
-  margin-top: 33px;
-  margin: -20px;
-  padding-top: 10px;
+  h1 {
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+}
 
+.container-fluid {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: left;
+  padding: 0px;
 }
 
 .container-logo {
@@ -16,8 +22,7 @@
 
 h1 {
   font-family: 'Prata', serif;
-  font-size: 30px;
-  padding-left: 30px;
+  font-size: 26px;
 }
 
 #dressher {
@@ -52,11 +57,11 @@ h1 {
 }
 
 .search-form-control .form-control {
-  height: 25px;
+  height: 24px;
   // box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   border: 1px solid #E0E0E0;
-  font-size: 14px;
-  width: 115px;
+  font-size: 12px;
+  width: 200px;
 }
 
 .search-form-control .form-control:hover {
@@ -78,10 +83,11 @@ h1 {
 
 .fa-solid fa-globe {
   color: #E0E0E0;
+  font-size: 20px;
 }
 
 .fa-solid fa-globe a:hover {
-  color: #3C3B3B;
+  color: $black;
   transition-duration: 0.7s;
 }
 
@@ -95,9 +101,16 @@ h1 {
   color: #E0E0E0;
 }
 
-.fa-solid fa-square-user {
-  color: black;
+.fa-bars::before {
+  color: #E0E0E0;
 }
+
+.fa-bars:hover:before {
+  color: $black;
+  transition-duration: 0.5s;
+}
+
+
 
 
 //and_dropdown_feature
@@ -108,8 +121,7 @@ h1 {
     transition-duration: 0.5s;
 
     &:hover {
-
-      color: #3C3B3B;
+      color: $black;
       transition-duration: 0.5s;
     }
 
@@ -119,7 +131,6 @@ h1 {
   .fa-solid {
     font-size: 18px;
   }
-  margin-right: 40px;
   display: flex;
   align-items: center;
 }
@@ -130,10 +141,10 @@ h1 {
 .dropbtn {
   background-color: white;
   color: #c8c8c8;
-  font-size: 30px;
+  font-size: 24px;
   border: none;
   transition-duration: 0.7s;
-  width: 75px;
+  width: 24px;
 }
 
 .dropdown:hover .dropbtn {
@@ -153,8 +164,8 @@ h1 {
     position: absolute;
     background-color: white;
     min-width: 300px;
-    top: 40px;
-    right: 7px;
+    top: 24px;
+    right: -24px;
     font-size: 16px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -190,6 +201,6 @@ h1 {
 }
 
 .py-4 {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
+  height: 75px;
+  margin: 0px 55px;
 }
