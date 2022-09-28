@@ -13,16 +13,16 @@
 
   <body>
     <div class="page-container">
-      <div class="navbar-container"><% if action_name == 'home' %>
-         <%= render "shared/navbar_homepage" %>
-         <% else %>
-         <%= render "shared/navbar" %>
+        <div class="navbar-container"><% if action_name == 'home' %>
+          <%= render "shared/navbar_homepage" %>
+          <% else %>
+          <%= render "shared/navbar" %>
           <% end %>
             <div class="searchbar-container"><% unless action_name == 'home' %>
-              <%= render "shared/searchbar" %>
-              <% end %>
+                <%= render "shared/searchbar" %>
+                <% end %>
             </div>
-      </div>
+        </div>
         <div class="content-container"><%= yield %></div>
           <div class="footer-container"><% unless action_name == 'home' %>
             <%= render "shared/footer" %>

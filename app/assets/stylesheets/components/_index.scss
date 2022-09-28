@@ -18,3 +18,15 @@
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
 }
+
+.container {
+  max-width: 1320px;
+  margin-top: 150px;
+}
+
+.navbar-container {
+  position: fixed;
+  width: 100%;
+  background: white;
+  z-index: 1;
+}
