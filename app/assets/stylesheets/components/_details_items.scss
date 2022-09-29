@@ -37,50 +37,59 @@
     font-family: Open Sans;
 
     .card-details-item-brand{
-      font-size: 30px;
-      padding-bottom: 10px;
+      font-size: 18px;
     }
 
     .card-details-item-title{
-      font-size: 35px;
+      font-size: 30px;
       font-weight: bold;
-      padding-bottom: 10px;
+    }
+
+    .card-details-item-size {
+      font-size: 16px;
+      margin-top: 25px;
     }
 
     .card-details-item-price {
-      font-size: 28px;
+      font-size: 24px;
       font-weight: lighter;
-      padding-bottom: 10px;
     }
 
     .card-details-item-user {
-      margin-top: 20px;
+      margin-top: 25px;
+      font-size: 14px;
+    }
+
+    .card-details-item-description {
+      margin-top: 15px;
+      font-size: 14px;
+
     }
 
     .btn-add {
-      width: 110px;
+      width: 200px;
       height: auto;
-      background: #373636;
+      background: $black;
       text-align: center;
-      border-radius: 2px;
-      transition: background 0.3s ease;
       margin-top: 20px;
       padding: 10px;
+      font-size: 16px;
+
     }
 
     a {
       text-decoration: none;
-      color: white;
+      color: $white;
     }
+
     .btn-add:hover {
-      border-radius: 2px;
-      background-color: #666565;
-      transition-duration: 0.5s;
-      border-color: #666565 ;
+      background-color: $white;
+      border: solid $black ;
     }
 
     a:hover{
       text-decoration: none;
+      color: $black;
     }
   }
 }
