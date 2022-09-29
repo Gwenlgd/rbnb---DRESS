@@ -18,16 +18,15 @@
 }
 .footer-right a {
   text-decoration: none;
-  font-size: 24px;
-  width: 24px;
-  opacity: 0.5;
+  font-size: 22px;
+  width: 50px;
   color: $black;
   transition-duration: 0.5s;
 }
+
 .footer-right a:hover {
-  color: $black;
+  color: #E0E0E0;
   transition-duration: 0.5s;
-  opacity: 0.9;
 }
 
 i {
@@ -35,6 +34,12 @@ i {
 }
 
 
+.footer .fa-bars::before {
+  color: $black;
+  font-size: 20px;
+  position: relative;
+  left: -38px;
+}
 /* Dropup Button */
 .dropbtn {
   background-color: white;
@@ -42,13 +47,10 @@ i {
   font-size: 24px;
   border: none;
   transition-duration: 0.5s;
-
   width: 100px;
-  opacity: 0.5;
 }
 
 .dropup:hover .dropbtn {
-  opacity: 0.9;
   color: $black;
   transition-duration: 0.5s;
 }
@@ -66,12 +68,14 @@ i {
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 375px;
-  bottom: 40px;
-  left: 30px;
-  font-size: 16px;
+  min-width: 300px;
+  bottom: 35px;
+  left: -24px;
+  font-size: 14px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  padding: 10px;
+
 }
 
 /* Links inside the dropup */

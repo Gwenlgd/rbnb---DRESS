@@ -27,7 +27,7 @@ font-weight: lighter;
 .dropsearchbtn {
   background-color: $black;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1px;
   border: none;
   width: 190px;
@@ -53,9 +53,13 @@ font-weight: lighter;
   position: absolute;
   background-color: $black;
   min-width: 200px;
+  max-height: 450px;
   top: 40px;
-  font-size: 16px;
+  font-size: 14px;
   z-index: 1;
+  padding: 10px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 /* Links inside the dropup */
