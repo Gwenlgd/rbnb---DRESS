@@ -8,7 +8,6 @@
 
   <h2>Sign in</h2>
   <p>- to check out deals, offers, discounts and bonus vouchers.</p>
-  <br>
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: {turbo: false}) do |f| %>
   <div class="form-inputs">
@@ -35,7 +34,7 @@
   <% end %>
 
   <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
-  <%= link_to "Forgot your password?", new_password_path(resource_name), class: "btn btn-forgotpassword py-2"  %><br />
+  <%= link_to "Forgot password?", new_password_path(resource_name), class: "btn btn-forgotpassword py-2"  %><br />
   <% end %>
 
   </div>

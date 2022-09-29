@@ -34,9 +34,8 @@
               <%= button_to "logout", destroy_user_session_path, method: :delete  %>
               <% else %>
                 <%= link_to "Sign in", new_user_session_path%>
-
-                <%= link_to "Not a member yet ? Join for free!", new_user_registration_path%>
                 <a href="#">My account</a>
+                <%= link_to "Not a member yet ? Join for free!", new_user_registration_path%>
               <% end %>
             </div>
         </div>
