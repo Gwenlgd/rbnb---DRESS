@@ -1,12 +1,13 @@
 <div class="container">
 <div class="wrapper">
 <div class="partyimage">
-<%= image_tag "partyimage.jpg", class: "sizingimage" %>
+<%= image_tag "member.jpg", class: "sizingimage" %>
 
 </div>
 <div class="signupform">
   <div class="signuptitle">
-  <h2 class="mt-4">Sign up to checkout</h2>
+  <h2 class="mt-4">Become a member</h2>
+  <p> - don’t miss out on deals, offers, discounts and bonus vouchers.</p>
   </div>
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name),
     data: {turbo: false}) do |f| %>
@@ -15,26 +16,26 @@
     <div class="form-inputs">
       <%= f.input :email,
                   label: false,
-                  placeholder: "Email",
+                  placeholder: "Email *",
                   required: true,
                   autofocus: true,
                   input_html: { autocomplete: "email", class: "input-form" }%>
       <%= f.input :password,
                   label: false,
-                  placeholder: "Password",
+                  placeholder: "Create a password *",
                   required: true,
-                  hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                  hint: (" Min #{@minimum_password_length} characters, 1 uppercase & 1 number" if @minimum_password_length),
                   input_html: { autocomplete: "new-password", class: "input-form" } %>
       <%= f.input :password_confirmation,
                   label: false,
-                  placeholder: "Password Confirmation",
+                  placeholder: "Password Confirmation *",
                   required: true,
                   input_html: { autocomplete: "new-password", class: "input-form mb-4" } %>
     </div>
 
     <div class="form-actions">
-      <%= f.button :submit, "Sign up", class: "btn-white py-2" %>
-      <%= link_to "Log in", new_session_path(resource_name), class: "btn btn-signup-forgotpassword py-2" %>
+      <%= f.button :submit, "Become a member", class: "btn-white py-2" %>
+      <%= link_to "Sign in", new_session_path(resource_name), class: "btn btn-signup-forgotpassword py-2" %>
     </div>
   <% end %>
 </div>

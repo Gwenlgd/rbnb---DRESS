@@ -16,13 +16,14 @@
         <div class="dropdown">
           <i class="fa-solid fa-bars "></i>
             <div class="dropdown-content">
-              <a href="#">Profile</a>
-              <a href="#">Settings</a>
+
               <% if current_user %>
               <%= button_to "logout", destroy_user_session_path, method: :delete  %>
+
               <% else %>
-                <%= link_to "Sign In / Sign Out", new_user_registration_path%>
-                <%= link_to "Log In", new_user_session_path%>
+                <%= link_to "Sign in", new_user_session_path%>
+                <a href="#">My account</a>
+                <%= link_to "Not a member yet ? Join for free!", new_user_registration_path%>
               <% end %>
             </div>
         </div>
