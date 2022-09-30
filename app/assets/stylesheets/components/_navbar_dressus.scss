@@ -97,7 +97,7 @@ h1 {
   color: $black;
   font-size: 15px;
   position: relative;
-  left: 133px;
+  left: 165px;
   bottom: 1px;
   z-index: 1;
 }
@@ -147,6 +147,7 @@ h1 {
   a {
     color: #E0E0E0;
     transition-duration: 0.5s;
+    text-decoration: none;
     width: 50px;
 
     &:hover {
