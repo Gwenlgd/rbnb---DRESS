@@ -31,6 +31,7 @@ grant = User.create!(first_name: "Grant", last_name: "N.", address: "Berawa Beac
 eric = User.create!(first_name: "Eric", last_name: "J.", address: "Morton Street, New York", phone_number: "+ 44 2938493673", email: "ericj@test.com", password: "paradise")
 viktor = User.create!(first_name: "eric", last_name: "F.", address: " Tigris u. 28, Budapest", phone_number: "+ 44 2938493673", email: "viktorf@test.com", password: "paradise")
 alex = User.create!(first_name: "Alex", last_name: "R.", address: " rue des Boulains, Guernesey", phone_number: "+ 44 2956193673", email: "alexr@test.com", password: "paradise")
+
 puts "Creating listings..."
 
 
