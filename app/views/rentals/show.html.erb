@@ -3,21 +3,11 @@
 
 <div class="page-container">
   <div class="my-container">
-    <div class="all-bag-page">
-      <div class="card-bag-item ">
-          <div class="card-images-bag">
-            <div class="title-bag">Shopping Bag</div>
-            <%= cl_image_tag @listing.photos[0].key %>
-          </div>
+    <div class="title-bag">Shopping Bag</div>
+      <div class="all-bag-page">
+        <div class="card-bag-item ">
 
-        <div class="bag-item">
-          <div class="card-bag-item-brand"><%= @listing.brand %></i></div>
-          <div class="card-bag-item-description"><%= @listing.description %></div>
-          <div class="card-bag-item-size">Size <%= @listing.size %></div>
-          <div class="card-bag-item-price">€ <%= @listing.price %></div>
-          <div class="card-bag-item-user">Rented by: &nbsp;&nbsp; <%= @rental.listing.user.first_name %></div>
-        </div>
-        <div class="order-summary">
+<div class="order-summary">
           <div class="card-summary">
             <div class="order-sum-title"><h2>ORDER SUMMARY</h2></div>
 
@@ -33,10 +23,6 @@
                 <div class="order-chosen">
                 <p><%= (@rental.start_date..@rental.end_date).count %> days</p>
                 </div>
-
-
-
-
               </div>
               <div class="line"></div>
               <%# PRICE %>
@@ -68,6 +54,18 @@
             </div>
 
         </div>
+
+          <div class="card-images-bag">
+            <%= cl_image_tag @listing.photos[0].key %>
+          </div>
+            <div class="bag-item">
+              <div class="card-bag-item-brand"><%= @listing.brand %></i></div>
+              <div class="card-bag-item-description"><%= @listing.description %></div>
+              <div class="card-bag-item-size">Size <%= @listing.size %></div>
+              <div class="card-bag-item-price">€ <%= @listing.price %></div>
+              <div class="card-bag-item-user">Rented by: &nbsp;&nbsp; <%= @rental.listing.user.first_name %></div>
+            </div>
+      </div>
     </div>
   </div>
 </div>
