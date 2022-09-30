@@ -23,9 +23,12 @@
         </div>
       <% end %>
     </div>
-      <a href="https://www.instagram.com/" target="_blank"><i class="fa-solid fa-globe fa-lg me-4"></i></a>
-      <a href="https://www.facebook.com/" target="_blank"><i class="fa-solid fa-heart fa-lg me-4"></i></a>
-      <a href= link_to target="_blank"><i class="fa-solid fa-bag-shopping fa-lg me-4"></i></a>
+      <%= link_to wishlist_path, class: "fa-solid fa-globe" do %>
+      <% end %>
+      <%= link_to wishlist_path, class: "fa-solid fa-heart" do %>
+      <% end %>
+      <%= link_to wishlist_path, class: "fa-solid fa-bag-shopping" do %>
+      <% end %>
         <div class="dropdown">
           <i class="fa-solid fa-bars "></i>
             <div class="dropdown-content">

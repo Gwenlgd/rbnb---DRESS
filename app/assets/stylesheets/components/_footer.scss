@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   height: 56px;
-  padding: 0px 55px;
+  padding: 0px 25px;
   color: rgba(0, 0, 0, 0.3);
   border-top-style: solid;
   border-width: 1px;
@@ -14,8 +14,8 @@
   display: flex;
   align-items: center;
   color: $black;
-  padding: 15px;
 }
+
 .footer-right a {
   text-decoration: none;
   font-size: 22px;
@@ -29,16 +29,11 @@
   transition-duration: 0.5s;
 }
 
-i {
-  margin: 0 0 0 35px;
-}
-
-
 .footer .fa-bars::before {
   color: $black;
   font-size: 20px;
   position: relative;
-  left: -38px;
+  left: 15px;
 }
 /* Dropup Button */
 .dropbtn {
@@ -61,6 +56,7 @@ i {
 .dropup {
   position: relative;
   display: inline-block;
+  width: 50px;
 }
 
 /* Dropup content (Hidden by Default) */
@@ -70,7 +66,6 @@ i {
   background-color: white;
   min-width: 300px;
   bottom: 35px;
-  left: -24px;
   font-size: 14px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   z-index: 1;
