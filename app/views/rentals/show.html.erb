@@ -3,68 +3,69 @@
 
 <div class="page-container">
   <div class="my-container">
-    <div class="title-bag">Shopping Bag</div>
+    <div class="title-bag"><h1>Shopping Bag</h1></div>
       <div class="all-bag-page">
-        <div class="card-bag-item ">
-
-<div class="order-summary">
-          <div class="card-summary">
-            <div class="order-sum-title"><h2>ORDER SUMMARY</h2></div>
-
-            <%# DELIVERY %>
-              <div class="order-delivery">
-                <div class="order-parag"><p>Delivery time (Express)</p></div>
-                <div class="order-chosen"><p>Next Working day</p></div>
-              </div>
-
-              <div class="order-rental-period">
-                <div class="order-parag"><p>Rental period</p></div>
-                <%# Find a way to calculate the number of days %>
-                <div class="order-chosen">
-                <p><%= (@rental.start_date..@rental.end_date).count %> days</p>
-                </div>
-              </div>
-              <div class="line"></div>
-              <%# PRICE %>
-              <div class="order-rental-price">
-                <div class="order-parag"><p>Rental price</p></div>
-                <div class="order-chosen"><p>€ <%= @listing.price %></p></div>
-              </div>
-
-              <div class="order-insurance-price">
-                <div class="order-parag"><p>Insurance</p></div>
-                <div class="order-chosen"><p>€ 8 / day </p></div>
-              </div>
-
-              <div class="order-delivery-price">
-                <div class="order-parag"><p>Delivery cost</p></div>
-                <div class="order-chosen"><p>€ 6</p></div>
-              </div>
-              <div class="line"></div>
-              <%# TOTAL %>
-              <div class="order-total-price">
-                <div class="order-parag"><p>TOTAL</p></div>
-                <div class="order-chosen"><p>€ 188</p></div>
-              </div>
-
-              <div class="order-button">
-                <%= link_to "Add to bag", dashboard_path(@listing)%>
-              </div>
-
-            </div>
-
-        </div>
-
+        <div class="card-bag-item">
           <div class="card-images-bag">
             <%= cl_image_tag @listing.photos[0].key %>
           </div>
-            <div class="bag-item">
-              <div class="card-bag-item-brand"><%= @listing.brand %></i></div>
-              <div class="card-bag-item-description"><%= @listing.description %></div>
-              <div class="card-bag-item-size">Size <%= @listing.size %></div>
-              <div class="card-bag-item-price">€ <%= @listing.price %></div>
-              <div class="card-bag-item-user">Rented by: &nbsp;&nbsp; <%= @rental.listing.user.first_name %></div>
-            </div>
+          <div class="bag-item">
+            <div class="card-bag-item-brand"><%= @listing.brand %></i></div>
+            <div class="card-bag-item-description"><%= @listing.description %></div>
+            <div class="card-bag-item-size">Size <%= @listing.size %></div>
+            <div class="card-bag-item-price">€ <%= @listing.price %></div>
+            <div class="card-bag-item-user">Rented by: &nbsp;&nbsp; <%= @rental.listing.user.first_name %></div>
+          </div>
+
+          <div class="order-summary">
+            <div class="card-summary">
+              <div class="order-sum-title"><h2>ORDER SUMMARY</h2></div>
+
+              <%# DELIVERY %>
+                <div class="order-delivery">
+                  <div class="order-parag"><p>Delivery time (Express)</p></div>
+                  <div class="order-chosen"><p>Next Working day</p></div>
+                </div>
+
+                <div class="order-rental-period">
+                  <div class="order-parag"><p>Rental period</p></div>
+                  <%# Find a way to calculate the number of days %>
+                  <div class="order-chosen">
+                  <p><%= (@rental.start_date..@rental.end_date).count %> days</p>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <%# PRICE %>
+                <div class="order-rental-price">
+                  <div class="order-parag"><p>Rental price</p></div>
+                  <div class="order-chosen"><p>€ <%= @listing.price %></p></div>
+                </div>
+
+                <div class="order-insurance-price">
+                  <div class="order-parag"><p>Insurance</p></div>
+                  <div class="order-chosen"><p>€ 8 / day </p></div>
+                </div>
+
+                <div class="order-delivery-price">
+                  <div class="order-parag"><p>Delivery cost</p></div>
+                  <div class="order-chosen"><p>€ 6</p></div>
+                </div>
+                <div class="line"></div>
+                <%# TOTAL %>
+                <div class="order-total-price">
+                  <div class="order-parag"><p>TOTAL</p></div>
+                  <div class="order-chosen"><p>€ 188</p></div>
+                </div>
+
+                <div class="order-button">
+                  <%= link_to "Add to bag", dashboard_path(@listing)%>
+                </div>
+
+              </div>
+
+          </div>
+
+
       </div>
     </div>
   </div>

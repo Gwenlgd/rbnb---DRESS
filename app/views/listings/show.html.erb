@@ -30,10 +30,15 @@
           <div class="card-details-item-price">€ <%= @listing.price %></div>
           <div class="card-details-item-size">Size <%= @listing.size %></div>
           <div class="card-details-item-description"><%= @listing.description %></div>
-          <div class="card-details-item-user">Rented by: &nbsp;&nbsp; <%= @listing.user.first_name %></div>          <div class="btn-add" >
-          <%= link_to "Add to bag", new_listing_rental_path(@listing)%>
+            <div class="btn-add" >
+            <%= link_to "Add to bag", new_listing_rental_path(@listing)%>
+            </div>
+          <div class="card-details-item-user">Rented by: &nbsp;&nbsp; <%= @listing.user.first_name %></div>
         </div>
-      </div>
     </div>
+
+
+
+
   </div>
 </div>
