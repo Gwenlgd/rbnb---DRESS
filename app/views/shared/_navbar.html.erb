@@ -34,7 +34,7 @@
               <a href="#">Settings</a>
               <a href="#">Wishlist</a>
               <a href="#">Shopping bag</a>
-              <%= button_to "Logout", destroy_user_session_path, class: "btn-logout" , method: :delete  %>
+              <%= button_to "Sign out", destroy_user_session_path , method: :delete  %>
               <% else %>
                 <%= link_to "Sign in", new_user_session_path%>
                 <%= link_to "Not a member yet ? Join for free!", new_user_registration_path%>
