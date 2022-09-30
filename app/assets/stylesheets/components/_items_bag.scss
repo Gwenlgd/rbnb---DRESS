@@ -9,23 +9,20 @@
   font-family: Open Sans;
 
   .card-bag-item {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    align-items: center;
 
-    .title-bag {
-      font-size: 24px;
-      padding-bottom: 10px;
-      color: $black;
-    }
+
 
   }
 
 // PICTURE RENTAL
 
   .card-images-bag img {
-    height: 490px;
-    margin-top: 20px;
+    height: 250px;
+    margin-top: 0px;
     margin-right: 20px;
+    margin-left: 100px;
     // object-fit: contain;
     box-shadow: rgba(50, 50, 93, 0.15) 0px 13px 27px -5px, rgba(0, 0, 0, 0.10) 0px 8px 16px -8px;
   }
@@ -35,17 +32,17 @@
   .bag-item {
     color: black;
     width: max-content;
-    padding: 200px 0px 35px 30px;
+    margin: 0px;
     font-family: Open Sans;
 
     .card-bag-item-brand {
-      font-size: 30px;
+      font-size: 18px;
       padding-bottom: 4px;
       font-weight: bold;
     }
 
     .card-bag-item-price {
-      font-size: 28px;
+      font-size: 18px;
       font-weight: lighter;
     }
 
@@ -55,7 +52,7 @@
     }
 
     .card-bag-item-description {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: lighter;
         font-style: italic;
         padding-bottom: 4px;
@@ -63,6 +60,7 @@
 
     .card-bag-item-user {
       margin-top: 20px;
+      font-size: 12px;
     }
   }
 
@@ -70,7 +68,7 @@
 
   .order-summary {
     margin-left: 30px;
-    margin-top: 95px;
+    margin-top: 0px;
     height: 450px;
     width: 400px;
     background-color: $white;
@@ -182,4 +180,12 @@
       color: $white;
     }
   }
+}
+
+.title-bag {
+  font-size: 24px;
+  padding-bottom: 10px;
+  color: $black;
+  display: flex;
+  justify-content: center;
 }

@@ -1,6 +1,9 @@
 <div class="page-container">
   <div class="my-container">
-  <h2>All your rentals:</h2>
+  <div class="dashh2">
+<h2>All your rentals:</h2>
+  </div>
+
     <div class="cards-dash">
       <% @rentals.each do |rental| %>
         <%= link_to rental_path(rental) do %>
