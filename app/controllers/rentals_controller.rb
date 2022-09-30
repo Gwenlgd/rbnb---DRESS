@@ -9,7 +9,6 @@ class RentalsController < ApplicationController
   def show
     @listing = @rental.listing
     @rental.user = current_user
-
   end
 
   def new

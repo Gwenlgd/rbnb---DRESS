@@ -13,6 +13,9 @@
 @import "likes.scss";
 
 
+// MEDIA QUERIES - RESPONSIVE
+@import "media_queries.scss";
+
 .page-container {
   display: grid;
   min-height: 100vh;

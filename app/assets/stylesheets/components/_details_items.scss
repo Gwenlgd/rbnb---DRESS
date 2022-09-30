@@ -1,13 +1,13 @@
 //SHOW LISTINGS
 
 .all-cards-item {
-  margin: 30px;
+  // margin: 30px;
   // padding: 15px 35px 0px 155px;
 
   .card-detail-item {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin: 30px;
+    // margin: 30px;
     height: 500px;
   }
 
@@ -31,10 +31,12 @@
 
   .details-item {
     color: black;
-    margin-left: 20px;
-    width: max-content;
-    padding: 85px 0px 36px 116px;
+    margin-left: 100px;
+    height: 450px;
+    width: 400px;
+    padding: 30px 60px 30px 60px;
     font-family: Open Sans;
+    border: solid #3C3B3B;
 
     .card-details-item-brand{
       font-size: 18px;
