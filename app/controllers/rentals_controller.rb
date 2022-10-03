@@ -1,5 +1,5 @@
 class RentalsController < ApplicationController
-  before_action :set_rental, only: [:show]
+  before_action :set_rental, only: [:show, :destroy]
   before_action :set_listing, only: [:new, :create]
 
   def index
@@ -14,6 +14,7 @@ class RentalsController < ApplicationController
   def new
     @rental = Rental.new
     @listing = Listing.find(params[:listing_id])
+    @rental.user = current_user
   end
 
   def create
@@ -27,6 +28,11 @@ class RentalsController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
+  end
+
+  def destroy
+    @rental.destroy
+    redirect_to @rental, status: :see_other
   end
 
   private

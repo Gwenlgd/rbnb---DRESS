@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'pages#dashboard'
   get '/wishlist', to: 'pages#wishlist'
   get '/insurance', to: 'pages#insurance'
+  get '/confirmation', to: 'pages#confirmation'
   get '/tests', to: 'pages#testgwen'
 
 
