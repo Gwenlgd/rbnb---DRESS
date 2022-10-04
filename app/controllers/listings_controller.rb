@@ -14,10 +14,10 @@ class ListingsController < ApplicationController
   def show
   end
 
-  # def destroy
-  #   @recipe.destroy
-  #   redirect_to listing_rentals_path, status: :see_other
-  # end
+  def destroy
+    @listing.destroy
+    redirect_to listings_path, status: :see_other
+  end
 
   private
 

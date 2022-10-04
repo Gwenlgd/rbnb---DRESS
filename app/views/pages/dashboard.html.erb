@@ -1,24 +1,10 @@
-<div class="page-container">
-  <div class="my-container">
-  <div class="dashh2">
-<h2>All your rentals:</h2>
-  </div>
+<h1>DASHBOARD</h1>
 
-    <div class="cards-dash">
-      <% @rentals.each do |rental| %>
-        <%= link_to rental_path(rental) do %>
-        <div class="card-item-dash">
-            <div class="card-item-infos-dash">
-            <%= cl_image_tag rental.listing.photos[0].key %>
-                <div class="card-item-date-dash">
-                  <div class="card-date-start"><p>Rental period: </p><%= rental.start_date.strftime('%d-%m') %> / <%= rental.end_date.strftime('%d-%m %Y') %> </div>
-                  <div class="card-status"><p>Status:</p><%= rental.status %></div>
-                  <div class="card-user-listing"><p>Rented by:</p> &nbsp;&nbsp; <%= rental.listing.user.first_name %></div>
-                </div>
-            </div>
-        </div>
-        <% end %>
-      <% end %>
-    </div>
-  </div>
-</div>
+
+<p>TO DO
+YOURS LISTINGS
+ DELETING LISTINGS
+
+RENTALS ON GOING
+RENTALS OVER (HISTORY)
+RENTALS LISTINGS</p>

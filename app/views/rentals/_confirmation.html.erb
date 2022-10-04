@@ -1,9 +1,9 @@
 <%# _items_bag.scss %>
-<div class="my-container">
+<div class="my-container2">
 
 <div class="page-container">
   <div class="my-container">
-    <div class="title-bag"><h1>Shopping Bag</h1></div>
+    <div class="title-bag"><h1>Recapitulatif of your rental</h1></div>
       <div class="all-bag-page">
         <div class="card-bag-item">
           <div class="card-images-bag">
@@ -58,20 +58,8 @@
                 </div>
 
                 <div class="order-button">
-                  <%= link_to "Back to the dashboard", listing_rentals_path(@listing)%>
+                  <%= link_to "Confirm bag", listing_rentals_path(@listing)%>
                 </div>
-                <div class="delete-button">
-                  <%= link_to listing_rentals_path(@listing), data: {turbo_method: :delete} do %>
-                    <p>Delete</p>
-                    <% end %>
-                </div>
-
-                <%= simple_form_for @rental, method: :delete do |f| %>
-                      <div class="btn-delete-ms"> <button type="submit">X</button> </div>
-                    </div>
-                  </div>
-                <% end %>
-
               </div>
 
           </div>
