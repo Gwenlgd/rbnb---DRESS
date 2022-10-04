@@ -6,21 +6,21 @@
           <div class="card-images-item-big">
           <%= cl_image_tag @listing.photos[0].key %>
           </div>
-        <div class="card-images-item-small">
-          <div class="card-images-item-smallone">
-            <% if @listing.photos[1] %>
-            <%= cl_image_tag @listing.photos[1].key %>
-            <% end %>
-          </div>
-          <div class="card-images-item-smalltwo">
-            <% if @listing.photos[2] %>
-            <%= cl_image_tag @listing.photos[2].key %>
-            <% end %>
-          </div>
-          <div class="card-images-item-smallthree">
-            <% if @listing.photos[3] %>
-            <%= cl_image_tag @listing.photos[3].key %>
-            <% end %>
+          <div class="card-images-item-small">
+            <div class="card-images-item-smallone">
+              <% if @listing.photos[1] %>
+              <%= cl_image_tag @listing.photos[1].key %>
+              <% end %>
+            </div>
+            <div class="card-images-item-smalltwo">
+              <% if @listing.photos[2] %>
+              <%= cl_image_tag @listing.photos[2].key %>
+              <% end %>
+            </div>
+            <div class="card-images-item-smallthree">
+              <% if @listing.photos[3] %>
+              <%= cl_image_tag @listing.photos[3].key %>
+              <% end %>
             </div>
         </div>
 
