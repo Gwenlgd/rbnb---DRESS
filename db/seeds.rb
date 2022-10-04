@@ -74,7 +74,7 @@ defrusac.save
 # ralphlauren.save
 
 # SEEDS DONE
-hawes = Listing.create!(category: "Men", title: "Navy Suit", description: "Navy Suit, perfect for the summer", size: "50", price: "150", location: "New York", brand: "Hawes and Curtis", user: eric )
+hawes = Listing.create!(category: "Men", title: "Navy Suit", type_clothes: "Slim Fit Suits", description: "Navy Suit, perfect for the summer", size: "50", price: "150", location: "New York", brand: "Hawes and Curtis", user: eric )
 file = URI.open("https://handcmediastorage.blob.core.windows.net/productimages/JK/JKPRAS10-G01V-152879-800px-1040px.jpg")
 hawes.photos.attach(io: file, filename: "suits4.jpg", content_type: "image/jpg")
 file = URI.open("https://handcmediastorage.blob.core.windows.net/productimages/JK/JKPRAS10-G01V-152880-800px-1040px.jpg")
@@ -86,7 +86,7 @@ hawes.photos.attach(io: file, filename: "suits4.jpg", content_type: "image/jpg")
 hawes.save
 
 # SEEDS DONE
-cos = Listing.create!(category: "Men", title: "Casual Suit", description: "Casual Suit perfect for everyday or a country wedding", size: "50", price: "150", location: "Paris", brand: "Cos", user: grant )
+cos = Listing.create!(category: "Men", title: "Casual Suit", type_clothes: "Slim Fit Suits", description: "Casual Suit perfect for everyday or a country wedding", size: "50", price: "150", location: "Paris", brand: "Cos", user: grant )
 file = URI.open("https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F08%2F46%2F0846dbfb33c1767fe41149badf69ca7c87a023ba.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]")
 cos.photos.attach(io: file, filename: "suits5.jpg", content_type: "image/jpg")
 file = URI.open("https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F48%2Fd5%2F48d5e4e053775abd16ba6c0673812d1e1ac9c566.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D")
@@ -98,7 +98,7 @@ cos.photos.attach(io: file, filename: "suits5.jpg", content_type: "image/jpg")
 cos.save
 
 # SEEDS DONE
-aidanmax = Listing.create!(category: "Men", title: "Black/Grey Suit", description: "Very nice black/grey suit", size: "48", price: "150", location: "Amsterdam", brand: "Aidan Max", user: alex )
+aidanmax = Listing.create!(category: "Men", title: "Black/Grey Suit", type_clothes: "Skinny Fit Suits", description: "Very nice black/grey suit", size: "48", price: "150", location: "Amsterdam", brand: "Aidan Max", user: alex )
 file = URI.open("https://img01.ztat.net/article/spp-media-p1/82dd64f9a5a34dc1831662df15992cf9/a2f99d36173b444881b970d4de0b7c4e.jpg?imwidth=762")
 aidanmax.photos.attach(io: file, filename: "suits6.jpg", content_type: "image/jpg")
 file = URI.open("https://img01.ztat.net/article/spp-media-p1/755a5c0b828e4658a5f25f9f7cf5ea11/b7cf50b0ad2247e9b06f13c29b90ad28.jpg?imwidth=762")
@@ -111,7 +111,7 @@ aidanmax.save
 
 
 # SEEDS DONE
-isaacdewhirst = Listing.create!(category: "Men", title: "3 Pieces Suit", description: "Nice 3 pieces suit", size: "50", price: "150", location: "London", brand: "Isaac Dewhirst", user: jules )
+isaacdewhirst = Listing.create!(category: "Men", title: "3 Pieces Suit", type_clothes: "Three Pieces Suits", description: "Nice 3 pieces suit", size: "50", price: "150", location: "London", brand: "Isaac Dewhirst", user: jules )
 file = URI.open("https://img01.ztat.net/article/spp-media-p1/12719982d3073649aed164f0f8e7f32a/12b40dca2b9446179deeb92f197e04a0.jpg?imwidth=1800")
 isaacdewhirst.photos.attach(io: file, filename: "suits7.jpg", content_type: "image/jpg")
 file = URI.open("https://img01.ztat.net/article/spp-media-p1/818289740cc53d64aca5e6d1f9ef7e2c/03224a36bb5b455090c52b3736d4bf16.jpg?imwidth=762")
@@ -123,7 +123,20 @@ isaacdewhirst.photos.attach(io: file, filename: "suits7.jpg", content_type: "ima
 isaacdewhirst.save
 
 # SEEDS DONE
-calvinklein = Listing.create!(category: "Men", title: "Blue Suit for wedding", description: "Blue Suit for wedding", size: "50", price: "150", location: "Paris", brand: "Lindbergh ", user: grant )
+isaacdewhirsttwo = Listing.create!(category: "Men", title: "Double Breasted Plain Slim Fit Suit", type_clothes: "Slim Fit Suits", description: "Nice 3 pieces suit", size: "48", price: "125", location: "Canggu", brand: "Isaac Dewhirst", user: gabriel )
+file = URI.open("https://img01.ztat.net/article/spp-media-p1/a5993e47a5a33321bcfeae6ca7f524dc/e510c2e4f6124e778fe3d5c713c44f50.jpg?imwidth=1800")
+isaacdewhirsttwo.photos.attach(io: file, filename: "suits7.jpg", content_type: "image/jpg")
+file = URI.open("https://img01.ztat.net/article/spp-media-p1/42431089c738301e934c991a3b45cb0b/6540be45d9524d35b1ef5303f2006142.jpg?imwidth=1800")
+isaacdewhirsttwo.photos.attach(io: file, filename: "suits7.jpg", content_type: "image/jpg")
+file = URI.open("https://img01.ztat.net/article/spp-media-p1/0417470a97a63920b42ab509db8f6e2e/adc7787445b444c2b3485e05dc12032b.jpg?imwidth=1800")
+isaacdewhirsttwo.photos.attach(io: file, filename: "suits7.jpg", content_type: "image/jpg")
+file = URI.open("https://img01.ztat.net/article/spp-media-p1/0640db5fa71e3540831ae14e7f242f66/0b768f3a59d54a739ca99f57f9d86e0a.jpg?imwidth=1800")
+isaacdewhirsttwo.photos.attach(io: file, filename: "suits7.jpg", content_type: "image/jpg")
+isaacdewhirsttwo.save
+
+
+# SEEDS DONE
+calvinklein = Listing.create!(category: "Men", title: "Blue Suit for wedding", type_clothes: "Wedding Suit", description: "Blue Suit for wedding", size: "50", price: "150", location: "Paris", brand: "Lindbergh ", user: grant )
 file = URI.open("https://calvinklein-eu.scene7.com/is/image/CalvinKleinEU/K10K103083_477_alternate1?$main$")
 calvinklein.photos.attach(io: file, filename: "suits8.jpg", content_type: "image/jpg")
 file = URI.open("https://calvinklein-eu.scene7.com/is/image/CalvinKleinEU/K10K103083_477_alternate2?$main$")
@@ -135,7 +148,7 @@ calvinklein.photos.attach(io: file, filename: "suits8.jpg", content_type: "image
 calvinklein.save
 
 # SEEDS DONE
-lindbergh = Listing.create!(category: "Men", title: "Blue Suit for wedding", description: "Blue Suit for wedding", size: "50", price: "150", location: "Paris", brand: "Lindbergh ", user: grant )
+lindbergh = Listing.create!(category: "Men", title: "Blue Suit for wedding", type_clothes: "Wedding Suit", description: "Blue Suit for wedding", size: "50", price: "150", location: "Paris", brand: "Lindbergh ", user: grant )
 file = URI.open("https://img01.ztat.net/article/spp-media-p1/c8bd25be0c3b36b2b2f68a7c7b306bf0/597ebf8a05254097969e29a64cfc8a5f.jpg?imwidth=762")
 lindbergh.photos.attach(io: file, filename: "suits8.jpg", content_type: "image/jpg")
 file = URI.open("https://img01.ztat.net/article/spp-media-p1/d887f44c928031d4943dc70cc616427e/904ae09c181141b8add11a1b3fa381e7.jpg?imwidth=762")
@@ -150,7 +163,7 @@ lindbergh.save
 #women's clothes
 
 # SEEDS DONE
-revolve = Listing.create!(category: "Women", title: "Blue Dress for Cocktails" ,description: "Wrap Dress from Revolve, worn once", size: "38",price: "80",location: "Paris" ,brand: "Asos", user: gwen )
+revolve = Listing.create!(category: "Women", title: "Blue Dress for Cocktails", type_clothes: "Bridesmaid Dress", description: "Wrap Dress from Revolve, worn once", size: "38",price: "80",location: "Paris" ,brand: "Asos", user: gwen )
 file = URI.open("https://www.vila.com/dw/image/v2/BDTC_PRD/on/demandware.static/-/Sites-pim-catalog/default/dwafed432c/pim-static/VL/14077575/14077575_KentuckyBlue_005.jpg?sw=675&sh=900")
 revolve.photos.attach(io: file, filename: "dress1.jpg", content_type: "image/jpg")
 file = URI.open("https://www.vila.com/dw/image/v2/BDTC_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw64c9f80e/pim-static/VL/14077575/14077575_KentuckyBlue_003.jpg?sw=900&sh=1200")
@@ -163,7 +176,7 @@ revolve.save
 
 
 # SEEDS DONE
-asos = Listing.create!(category: "Women", title: "Cocktail Midi Dress" ,description: "Perfect for a cocktail party, wedding.", size: "42", price: "80", location: "Paris", brand: "Asos", user: juliette)
+asos = Listing.create!(category: "Women", title: "Cocktail Midi Dress", type_clothes: "Evening Dress", description: "Perfect for a cocktail party, wedding.", size: "42", price: "80", location: "Paris", brand: "Asos", user: juliette)
 file = URI.open("https://cdna.lystit.com/photos/asos/c2b6b977/asos-Blue-Embellished-Cami-Midi-Dress.jpeg")
 asos.photos.attach(io: file, filename: "dress2.jpg", content_type: "image/jpg")
 file = URI.open("https://cdna.lystit.com/520/650/n/photos/asos/eabde716/asos-Blue-Embellished-Cami-Midi-Dress.jpeg")
@@ -176,7 +189,7 @@ asos.save
 
 
 # SEEDS DONE
-michellemason = Listing.create!(category: "Women", title: "Beautiful Wrap Dress" ,description: "Dress from Revolve, worn once", size: "40",price: "80",location: "Berlin" ,brand: "Michelle Mason", user: franka )
+michellemason = Listing.create!(category: "Women", title: "Beautiful Wrap Dress", type_clothes: "Evening Dress", description: "Dress from Revolve, worn once", size: "40",price: "80",location: "Berlin" ,brand: "Michelle Mason", user: franka )
 file = URI.open("https://cdn-images.farfetch-contents.com/18/07/92/79/18079279_38473532_1000.jpg")
 michellemason.photos.attach(io: file, filename: "dress3.jpg", content_type: "image/jpg")
 file = URI.open("https://cdn-images.farfetch-contents.com/18/07/92/79/18079279_38474302_1000.jpg")
@@ -187,27 +200,27 @@ file = URI.open("https://cdn-images.farfetch-contents.com/18/07/92/79/18079279_3
 michellemason.photos.attach(io: file, filename: "dress3.jpg", content_type: "image/jpg")
 michellemason.save
 
-beauut = Listing.create!(category: "Women", title: "Blue Dress" ,description: "Perfect for a cocktail party, wedding.", size: "42", price: "80", location: "Amsterdam", brand: "Beauut", user: gaby)
+beauut = Listing.create!(category: "Women", title: "Blue Dress", type_clothes: "Evening Dress", description: "Perfect for a cocktail party, wedding.", size: "42", price: "80", location: "Amsterdam", brand: "Beauut", user: gaby)
 file = URI.open("https://i.pinimg.com/originals/df/3f/dd/df3fddab399442fa9aa0a94c93f880e1.png")
 beauut.photos.attach(io: file, filename: "dress4.jpg", content_type: "image/jpg")
 beauut.save
 
-asostwo = Listing.create!(category: "Women", title: "White Bridesmaid Dress" ,description: "Worn once at a wedding.", size: "36",price: "100", location: "New York", brand: "Asos", user: april)
+asostwo = Listing.create!(category: "Women", title: "White Bridesmaid Dress", type_clothes: "Bridesmaid Dress", description: "Worn once at a wedding.", size: "36",price: "100", location: "New York", brand: "Asos", user: april)
 file = URI.open("https://images.asos-media.com/products/maids-to-measure-robe-longue-dos-nu-en-mousseline-pour-demoiselle-dhonneur-avec-dos-fantaisie/14226764-1-creamsoda?$n_960w$&wid=952&fit=constrain")
 asostwo.photos.attach(io: file, filename: "dress5.jpg", content_type: "image/jpg")
 asostwo.save
 
-revolvethree = Listing.create!(category: "Women", title: "Beautiful Wrap Dress" ,description: "Wrap Dress from Revolve, worn once", size: "38",price: "80",location: "Wien" ,brand: "Revolve", user: bodil )
+revolvethree = Listing.create!(category: "Women", title: "Beautiful Wrap Dress", type_clothes: "Evening Dress", description: "Wrap Dress from Revolve, worn once", size: "38",price: "80",location: "Wien" ,brand: "Revolve", user: bodil )
 file = URI.open("https://is4.revolveassets.com/images/p4/n/z/MOTO-WD11_V1.jpg")
 revolvethree.photos.attach(io: file, filename: "dress6.jpg", content_type: "image/jpg")
 revolvethree.save
 
-asosthree = Listing.create!(category: "Women", title: "Cocktail Midi Dress" ,description: "Perfect for a cocktail party, wedding.", size: "46",price: "50",location: "Barcelona" ,brand: "Asos", user: silvia)
+asosthree = Listing.create!(category: "Women", title: "Cocktail Midi Dress", type_clothes: "Bridesmaid Dress", description: "Perfect for a cocktail party, wedding.", size: "46",price: "50",location: "Barcelona" ,brand: "Asos", user: silvia)
 file = URI.open("https://i.pinimg.com/736x/5f/3f/9a/5f3f9ae5a2e25b8fc9646c3292d0e5b8.jpg")
 asosthree.photos.attach(io: file, filename: "dress7.jpg", content_type: "image/jpg")
 asosthree.save
 
-twinset = Listing.create!(category: "Women", title: "Beautiful Wrap Dress" ,description: "Wrap Dress from Revolve, worn once", size: "38",price: "80",location: "Paris" ,brand: "Asos", user: gwen )
+twinset = Listing.create!(category: "Women", title: "Black Tulle Dress", type_clothes: "Party Dress", description: "Black Tulle Dress for parties", size: "38",price: "60",location: "Paris" ,brand: "Twinset", user: gwen )
 file = URI.open("https://i.pinimg.com/originals/18/9e/da/189edaf8c56a4fcfd5298180afdd03ff.jpg")
 twinset.photos.attach(io: file, filename: "dress8.jpg", content_type: "image/jpg")
 twinset.save
