@@ -9,6 +9,12 @@ class RentalsController < ApplicationController
   def show
     @listing = @rental.listing
     @rental.user = current_user
+    if params[:insurance] == "Yes, please"
+      @insurance = "Ca marche"
+      @insurance.save
+      else
+      @insurance = "Gratuit"
+    end
   end
 
   def new

@@ -25,15 +25,40 @@
         </div>
 
         <div class="details-item">
+          <div class="line"></div>
+            <p>Description</p>
+          <div class="line"></div>
           <div class="card-details-item-brand"><%= @listing.brand %></i></div>
           <div class="card-details-item-title"><%= @listing.title %></div>
           <div class="card-details-item-price">€ <%= @listing.price %></div>
           <div class="card-details-item-size">Size <%= @listing.size %></div>
           <div class="card-details-item-description"><%= @listing.description %></div>
-            <div class="btn-add" >
-            <%= link_to "Add to bag", new_listing_rental_path(@listing)%>
-            </div>
           <div class="card-details-item-user">Rented by: &nbsp;&nbsp; <%= @listing.user.first_name %></div>
+          <div class="line"></div>
+            <p>Period</p>
+          <div class="line"></div>
+            <%= simple_form_for [@listing, @rental] do |f| %>
+            <div class="form-inputs-date">
+              <h2><%= f.input :start_date, as: :date, html5: true, label: "Check-in", required: false %></h2>
+            </div>
+            <div class="form-inputs-date-checkout">
+              <h2><%= f.input :end_date, as: :date, html5: true, label: "Checkout", required: false  %></h2>
+            </div>
+            <div class="line"></div>
+              <p>Options</p>
+            <div class="line"></div>
+            <div class="form-inputs-delivery">
+              <h2><%= f.label :delivery, "Delivery options :", class: "label-del-ins"%></h2>
+              <%= f.input :delivery, as: :check_boxes, required: true, collection: [ "Express Delivery (2 days) : €15", "Standard Delivery (5 days) : €6"], legend_tag: false, input_html: { class: "tag-selector" }, item_wrapper_class: 'tag-item'%>
+            </div>
+            <div class="form-inputs-insurance">
+              <h2><%= f.label :insurance, "Would you like to insure your rental ? (€8 per day)", class: "label-del-ins"%></h2>
+              <%= f.input :insurance, as: :check_boxes, required: true, collection: [ "Yes, please", "No, thank you"], legend_tag: false, input_html: { class: "tag-selector" }, item_wrapper_class: 'tag-item'%>
+            </div>
+            <div class="form-actions-date">
+              <%= f.button :submit, class:"btn-date" %>
+            </div>
+            <% end %>
         </div>
     </div>
 
