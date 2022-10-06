@@ -7,4 +7,6 @@ class Rental < ApplicationRecord
   validates :start_date, presence: true
   validates :end_date, presence: true
   validates :status, presence: true
+  validates :insurance, acceptance: true
+  validates :delivery, acceptance: true
 end

@@ -10,11 +10,11 @@
       </div>
       <div class="form-inputs-delivery">
         <h2><%= f.label :delivery, "Delivery options :", class: "label-del-ins"%></h2>
-        <%= f.input :delivery, as: :check_boxes, collection: [ "Express Delivery (2 days) : €15", "Standard Delivery (5 days) : €6"], legend_tag: false, input_html: { class: "tag-selector" }, item_wrapper_class: 'tag-item'%>
+        <%= f.input :delivery, as: :check_boxes, required: true, collection: [ "Express Delivery (2 days) : €15", "Standard Delivery (5 days) : €6"], legend_tag: false, input_html: { class: "tag-selector" }, item_wrapper_class: 'tag-item'%>
       </div>
       <div class="form-inputs-insurance">
         <h2><%= f.label :insurance, "Would you like to insure your rental ? (€8 per day)", class: "label-del-ins"%></h2>
-        <%= f.input :insurance, as: :check_boxes, collection: [ "Yes, please", "No, thank you"], legend_tag: false, input_html: { class: "tag-selector" }, item_wrapper_class: 'tag-item'%>
+        <%= f.input :insurance, as: :check_boxes, required: true, collection: [ "Yes, please", "No, thank you"], legend_tag: false, input_html: { class: "tag-selector" }, item_wrapper_class: 'tag-item'%>
       </div>
       <div class="form-actions-date">
         <%= f.button :submit, class:"btn-date" %>

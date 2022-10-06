@@ -3,14 +3,9 @@
   <div class="my-container">
     <div class="select-date">
       <% if current_user %>
-
-                    <h1>Rental Period</h1>
-                      <%= render 'form', rental: @rental %>
-                  </div>
-
-
-
-
+        <h1>Rental Period</h1>
+          <%= render 'form', rental: @rental %>
+      </div>
           <% else %>
           <br><br>
           <h1>Please Sign In first</h1>
