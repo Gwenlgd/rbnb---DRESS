@@ -21,6 +21,12 @@ class RentalsController < ApplicationController
     @rental = Rental.new
     @listing = Listing.find(params[:listing_id])
     @rental.user = current_user
+    if params[:insurance] == "Yes, please"
+      @insurance = "Ca marche"
+      @insurance.save
+      else
+      @insurance = "Gratuit"
+    end
   end
 
   def create
