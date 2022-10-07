@@ -1,34 +1,33 @@
 
-.select-date {
+.select-date-new {
+  // text-align:center;
 
+  h1 {
+    // margin-top: 30px;
+    margin-bottom: 20px;
+
+  }
 }
 
-.booking-form {
-  color: black;
-  margin-left: 100px;
-  height: 496px;
-  width: 400px;
-  padding: 60px 60px 60px 60px;
-  font-family: Open Sans;
-  text-align: -webkit-center;
+.booking-form-new {
+    text-align:center;
+    margin: 0 auto 10px;
+    padding: 20px;
+    font-size: 16px;
+    height: 550px;
+    width: 600px;
+    border: solid #3C3B3B;
   }
 
-  .form-inputs-date {
-  color: #373636;
-  width: 100%;
-  height: 60px;
-  margin-bottom: 30px;
-  }
-
-  .form-inputs-date-checkout {
+  .form-inputs-date-new {
     color: #373636;
     width: 100%;
     height: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 
-  .form-actions-date {
-    .btn-date {
+  .form-actions-date-new {
+    .btn-date-new {
       justify-content: center;
       height: auto;
       transition: background 0.3s ease;
@@ -42,7 +41,7 @@
       font-size: 16px;
       }
 
-    .btn-date:hover {
+    .btn-date-new:hover {
       background: $white;
       color: $black;
       border-color: #373636;
@@ -72,11 +71,11 @@
   color: #f26868;
 }
 
-.btn {
+.btn-new {
   border-radius: 0px;
 }
 
-.form-select {
+.form-select-new {
   border-radius: 0px;
   font-size: 14px;
   height: 45px;

@@ -1,7 +1,7 @@
 <%# _items_bag.scss %>
 <div class="page-container">
   <div class="my-container">
-    <div class="title-bag"><h1>Shopping Bag</h1></div>
+    <div class="title-bag"><h1>Your Rental</h1></div>
       <div class="all-bag-page">
         <div class="card-bag-item">
           <div class="card-images-bag">
@@ -63,18 +63,8 @@
                     <p>Delete</p>
                     <% end %>
                 </div>
-
-                <%= simple_form_for @rental, method: :delete do |f| %>
-                      <div class="btn-delete-ms"> <button type="submit">X</button> </div>
-                    </div>
-                  </div>
-                <% end %>
-
               </div>
-
           </div>
-
-
       </div>
     </div>
   </div>

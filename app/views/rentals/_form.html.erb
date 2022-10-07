@@ -1,23 +1,23 @@
 <%# No DIV page-container, make the page looks weird %>
 
-  <div class="booking-form" >
+  <div class="booking-form-new" >
       <%= simple_form_for [@listing, @rental] do |f| %>
-      <div class="form-inputs-date">
+      <div class="form-inputs-date-new">
         <h2><%= f.input :start_date, as: :date, html5: true, label: "Check-in", required: false %></h2>
       </div>
-      <div class="form-inputs-date">
+      <div class="form-inputs-date-new">
         <h2><%= f.input :end_date, as: :date, html5: true, label: "Checkout", required: false  %></h2>
       </div>
-      <div class="form-inputs-delivery">
+      <div class="form-inputs-delivery-new">
         <h2><%= f.label :delivery, "Delivery options :", class: "label-del-ins"%></h2>
         <%= f.input :delivery, as: :check_boxes, required: true, collection: [ "Express Delivery (2 days) : €15", "Standard Delivery (5 days) : €6"], legend_tag: false, input_html: { class: "tag-selector" }, item_wrapper_class: 'tag-item'%>
       </div>
-      <div class="form-inputs-insurance">
+      <div class="form-inputs-insurance-new">
         <h2><%= f.label :insurance, "Would you like to insure your rental ? (€8 per day)", class: "label-del-ins"%></h2>
         <%= f.input :insurance, as: :check_boxes, required: true, collection: [ "Yes, please", "No, thank you"], legend_tag: false, input_html: { class: "tag-selector" }, item_wrapper_class: 'tag-item'%>
       </div>
-      <div class="form-actions-date">
-        <%= f.button :submit, class:"btn-date" %>
+      <div class="form-actions-date-new">
+        <%= f.button :submit, class:"btn-date-new" %>
       </div>
       <% end %>
   </div>
