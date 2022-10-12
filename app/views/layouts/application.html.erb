@@ -13,15 +13,24 @@
 
   <body>
     <div class="page-container">
-        <div class="navbar-container"><% if action_name == 'home' %>
+        <div class="navbar-container">
+        <% if action_name == 'home' %>
           <%= render "shared/navbar_homepage" %>
-          <% else %>
+        <% elsif params[:category] == "Men" %>
           <%= render "shared/navbar" %>
-          <% end %>
-            <div class="searchbar-container"><% unless action_name == 'home' %>
+        <% elsif params[:category] == "Women" %>
+          <%= render "shared/navbar_her" %>
+        <% end %>
+
+          <div class="searchbar-container">
+            <% unless action_name == 'home' %>
+              <% if params[:category] == "Men" %>
                 <%= render "shared/searchbar" %>
-                <% end %>
-            </div>
+              <% else %>
+                <%= render "shared/searchbar_her" %>
+              <% end %>
+            <% end %>
+          </div>
         </div>
         <div class="content-container"><%= yield %></div>
           <div class="footer-container"><% unless action_name == 'home' %>

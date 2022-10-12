@@ -5,7 +5,7 @@ class ListingsController < ApplicationController
     if params[:category] == "Men"
     @listings = Listing.where(category:"Men")
     elsif params[:category] == "Women"
-    @listings = Listing.where(category:"Women")
+    @listings = Listing.where(category:"Women") 
     else
     @listings = Listing.all
     end
