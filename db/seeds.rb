@@ -123,7 +123,7 @@ isaacdewhirst.photos.attach(io: file, filename: "suits7.jpg", content_type: "ima
 isaacdewhirst.save
 
 # SEEDS DONE
-isaacdewhirsttwo = Listing.create!(category: "Men", title: "Double Breasted Plain Slim Fit Suit", type_clothes: "Slim Fit Suits", description: "Nice 3 pieces suit", size: "48", price: "125", location: "Canggu", brand: "Isaac Dewhirst", user: gabriel )
+isaacdewhirsttwo = Listing.create(category: "Men", title: "Double Breasted", type_clothes: "Slim Fit Suits", description: "Nice 3 pieces suit", size: "48", price: "125", location: "Canggu", brand: "Isaac Dewhirst", user: gabriel )
 file = URI.open("https://img01.ztat.net/article/spp-media-p1/a5993e47a5a33321bcfeae6ca7f524dc/e510c2e4f6124e778fe3d5c713c44f50.jpg?imwidth=1800")
 isaacdewhirsttwo.photos.attach(io: file, filename: "suits7.jpg", content_type: "image/jpg")
 file = URI.open("https://img01.ztat.net/article/spp-media-p1/42431089c738301e934c991a3b45cb0b/6540be45d9524d35b1ef5303f2006142.jpg?imwidth=1800")
