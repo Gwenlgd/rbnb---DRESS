@@ -11,4 +11,5 @@ class Listing < ApplicationRecord
   validates :size, presence: true
   validates :price, presence: true
   validates :location, presence: true
+
 end

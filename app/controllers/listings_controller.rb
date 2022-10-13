@@ -9,11 +9,22 @@ class ListingsController < ApplicationController
     else
     @listings = Listing.all
     end
+    # @markers = @listings.geocoded.map do |listing|
+    #   {
+    #     lat: flat.latitude,
+    #     lng: flat.longitude
+    #   }
+    # end
   end
 
   def show
     @rental = Rental.new
-
+    # @markers = @listings.geocoded.map do |listing|
+    #   {
+    #     lat: flat.latitude,
+    #     lng: flat.longitude
+    #   }
+    # end
   end
 
   def destroy
