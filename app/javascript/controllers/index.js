@@ -4,5 +4,11 @@
 
 import { application } from "./application"
 
+import AllCheckboxesController from "./all_checkboxes_controller"
+application.register("all-checkboxes", AllCheckboxesController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import MapController from "./map_controller"
+application.register("map", MapController)
