@@ -5,7 +5,7 @@
     <div class="cards">
       <% @listings.each do |listing| %>
         <div class="card-item">
-          <%= link_to listing_path(listing) do %>
+          <%= link_to listing_path(listing, category: listing.category) do %>
           <%= cl_image_tag listing.photos[0].key %>
           <% end %>
           <div class="card-item-price">€ <%= listing.price %></div>
