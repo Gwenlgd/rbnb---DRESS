@@ -22,6 +22,8 @@
           <%= render "shared/navbar" %>
         <% elsif params[:category] == "Women" %>
           <%= render "shared/navbar_her" %>
+          <% else %>
+                <%= render "shared/navbar_homepage" %>
         <% end %>
 
           <div class="searchbar-container">
