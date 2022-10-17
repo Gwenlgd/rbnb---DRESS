@@ -28,15 +28,28 @@ h1 {
 }
 
 .card-item-price {
+  // width: 60px;
+  // height: auto;
+  // background: $black;
+  // text-align: center;
+  // position: absolute;
+  // top: 32px;
+  // right: 16px;
+  // color: $white;
+  // font-size: 14px;
+
   width: 60px;
-  height: auto;
+  height: 30px;
   background: $black;
-  text-align: center;
+  /* text-align: center; */
   position: absolute;
   top: 32px;
   right: 16px;
-  color: $white;
-  font-size: 14px;
+  color:$white;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-item .card-item-infos {
@@ -66,7 +79,7 @@ h1 {
   font-size: 12px;
   margin: 5px;
   position: relative;
-  left: 45px;
+  left: 42px;
   top: -12px;
 
 }
