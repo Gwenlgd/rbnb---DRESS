@@ -59,7 +59,7 @@
                   <%= link_to "Back to the dashboard", listing_rentals_path(@listing)%>
                 </div>
                 <div class="delete-button">
-                  <%= link_to listing_rentals_path(@listing), data: {turbo_method: :delete} do %>
+                  <%= link_to listing_rentals_path(@rental), data: {turbo_method: :delete}, turbo_confirm: "Are you sure you want to remove it ?" do %>
                     <p>Delete</p>
                     <% end %>
                 </div>

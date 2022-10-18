@@ -1,0 +1,29 @@
+<div class="page-container">
+  <div class="my-container">
+
+<%# BUTTON FOR INDEX PAGE ? %>
+    <button class="btn btn-add">
+      <%= link_to "Add A New Listing", new_listing_path %>
+    </button>
+<%# END %>
+
+  <h1>Add A New Listing</h1>
+
+      <%= simple_form_for [@listing] do |f| %>
+        <%= f.input :category%>
+        <%= f.input :title%>
+        <%= f.input :description%>
+        <%= f.input :size%>
+        <%= f.input :price%>
+        <%= f.input :location%>
+        <%= f.input :brand%>
+        <%= f.input :photos, as: :file, input_html: { direct_upload: true }%>
+
+      <div class="form-actions-date-new">
+        <%= f.button :submit, class:"btn-date-new" %>
+      </div>
+      <% end %>
+      </div>
+
+    </div>
+</div>
