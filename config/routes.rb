@@ -9,9 +9,11 @@ Rails.application.routes.draw do
 
 
   resources :listings do
-    resources :rentals, except: [:edit, :update]
+    resources :rentals
   end
 
+  resources :listings
+  resources :rentals
   resources :rentals, only: [:show] do
     resources :reviews, only: [:create, :new]
   end

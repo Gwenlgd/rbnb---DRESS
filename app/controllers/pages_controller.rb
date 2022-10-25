@@ -6,8 +6,8 @@ class PagesController < ApplicationController
   end
 
   def dashboard
-    # @listing = @rental.listing
-    # @rental.user = current_user
+    @listing = @rental.listing
+    @rental.user = current_user
     @rentals = current_user.rentals
     # @recent_rentals = Rental.distinct.order(created_at: :desc).limit(10)
   end

@@ -44,8 +44,7 @@ class RentalsController < ApplicationController
 
   def destroy
     @rental.destroy
-    raise
-    redirect_to listing_rentals_path(@listing), status: :see_other
+    redirect_to listing_rentals_path(@rental), status: :see_other
   end
 
   private
